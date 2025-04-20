@@ -4,8 +4,8 @@
  * @authorId 807170846497570848
  * @description Vencord port of Hanibee's Eye Candy theme.
  * @version 1.0.0
- * @updateUrl https://mudaranrhiod.github.io/DT/vencord/eyecandy.css
- * @source https://github.com/mudaranrhiod/DT/tree/main/vencord
+ * @updateUrl https://mudaranrhiod.github.io/VencordThemes/eyecandy.css
+ * @source https://github.com/mudaranrhiod/VencordThemes
  */
 
  :root {
@@ -60,11 +60,11 @@
     --bg-overlay-2: var(--bg-2);
     --bg-overlay-3: #5A4D5E;
     --bg-overlay-4: var(--bg-2);
-    --blue-new-26: rgb(0, 255, 81); /* links */
+    --blue-new-26: var(--text-link); /* links */
     --blue-new-36: #FFE1C1;
     --blurple-10: #5A4D5E;
     --blurple-19: #DFBE80; /* @mention foreground */
-    --blurple-25: rgb(0, 255, 81); /* links */
+    --blurple-25: var(--text-link); /* links */
     --blurple-35: var(--text-3);
     --blurple-49: #C3A16E; /* new message header */
     --blurple-50: var(--candy-accent-2); /* reacted border */
