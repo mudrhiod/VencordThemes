@@ -1,6 +1,6 @@
 /**
  * @name Eye Candy
- * @author Mudueon
+ * @author Mood
  * @authorId 807170846497570848
  * @description Vencord port of Hanibee's Eye Candy (Darker varient).
  * @version 1.0.0
@@ -9,11 +9,11 @@
  */
 
  @import url(https://mudaranrhiod.github.io/VencordThemes/eyecandy.css);
- :root {
+ :root, .theme-dark {
 
-    --bg-1: #3B3A45; /* primary background colours */
-    --bg-2: #33323C; /* secondary background colours */
+    --bg-1: #3B3A45;
+    --bg-2: #33323C;
     --bg-3: #393843;
 
-    .container__37e49, .panels_c48ade /* profile thing on bottom left */
+    .container__37e49, .panels_c48ade
     { background: #383743; border-radius: 8px;}
