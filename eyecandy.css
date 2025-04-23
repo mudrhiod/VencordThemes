@@ -28,7 +28,7 @@
     --text-2: #BDBECC;
     --text-3: #CEB0CD; /* placeholder and muted text */
     
-    --activity-card-background: var(--bg-2);
+    --activity-card-background: var(--bg-2) !important;
     --app-background-frame: var(--bg-3) !important;
     --background-accent: var(--candy-accent-2) !important;
     --background-base-low: var(--bg-1) !important;
@@ -56,7 +56,7 @@
     --background-mod-subtle: var(--bg-2) !important;
     --background-nested-floating: var(--bg-1);
     --background-primary: var(--bg-1) !important;
-    --background-secondary: var(--bg-1) !important;
+    --background-secondary: var(--bg-2) !important;
     --background-secondary-alt: var(--bg-1) !important;
     --background-surface-high: var(--bg-2) !important;
     --background-surface-higher: var(--bg-2) !important;
@@ -161,7 +161,7 @@
     --mention-background: #DFBE804D !important;
     --mention-foreground: #DFBE80 !important;
     --message-reacted-background: #C88EAD33 !important;
-    --message-reacted-text: #C88EAD !important;
+    --message-reacted-text: var(--text-1) !important;
     --modal-background: var(--bg-2) !important;
     --modal-footer-background: var(--bg-2) !important;
     --notice-background-critical: #C4967A;
@@ -199,6 +199,8 @@
     --red-360: #1eff00;
     --red-400: #C4967A;
     --red-500: #ff0;
+    --redesign-button-overlay-alpha-background: #5A4D5E8a;
+    --redesign-button-overlay-alpha-pressed-background: #5A4D5E; 
     --redesign-input-control-selected: #C2A775;
     --scrollbar-auto-scrollbar-color-track: var(--bg-2);
     --scrollbar-auto-thumb: var(--candy-accent) !important;
@@ -207,6 +209,7 @@
     --scrollbar-thin-track: transparent;
     --spoiler-hidden-background: #5eff00;
     --status-danger: #C4967A;
+    --status-danger-background: #C4967A;
     --yellow-300: #BDBAEB;
     --spine-default: var(--candy-accent-2) !important;
     --status-online: #ff0;
@@ -244,6 +247,9 @@
     .barFill_a562c8, .grabber_a562c8
     { background: var(--control-brand-foreground-new); }
 
+    :where(.buttonInner_fb7f94).icon_fb7f94
+    { color: var(--text-1); }
+
     .lookFilled__201d5.colorPrimary__201d5
     { color: var(--text-1); }
 
@@ -258,6 +264,7 @@
 
     .numberBadge__2b1f5  { --status-danger: #DFBE80; }
 
+    .joinOptionContent__959cb.active__959cb { background-color: #B17B93; }
     .container__87bf1, .shinyButton__6a443:hover, .bar_a562c8 { background: #696779!important; }
     .container__87bf1.checked__87bf1 { background: #C2A775!important; }
 
@@ -278,8 +285,13 @@
 
     .container__5b40b .spine__5b40b path[d^="M0 13H2c0"], path[d^="M6 18V16H9v2H6Zm3"] { 
       fill: var(--candy-accent-2); }
+  
+    .topGuildEmojiBadge_aeaaeb { background: linear-gradient(268.26deg,#C4967A, #B2814D); }
+    .newlyAddedBadge_aeaaeb { background: linear-gradient(268.26deg, #AF986B, #D1B681); }
 
     .permissionCheckmark__50a54 { background: url(https://mudaranrhiod.github.io/discord-iconpacks/vencord/72e4439bf318b5c5.svg) no-repeat; }
+
+    .lockIcon__2666b { content: url(https://mudaranrhiod.github.io/discord-iconpacks/vencord/513846bd926efc73.svg); }
 
     rect[fill='#82838b'], svg[fill='#82838b'] {
         fill: #75748B;
@@ -310,5 +322,8 @@
     }
     .status_a423bd[style='background-color: rgb(89, 54, 149);'] {
         background-color: #8F669C !important;
+    }
+    svg>path[fill='#40a258'] {
+      fill: var(--candy-green);
     }
   }
