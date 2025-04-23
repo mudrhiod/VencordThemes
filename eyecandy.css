@@ -224,7 +224,8 @@
     --white: var(--text-1);
 
     .messageContainer__95796, .messages__1ccd1, .messageGroupWrapper__45690,
-    .container__6764b
+    .container__6764b,
+    .container_e97453
     { background: var(--bg-1); }
 
     .listContainer__527b1 .listElement__527b1 
@@ -255,12 +256,12 @@
     { color: var(--text-1); }
 
     .side_b3f026 .themed_b3f026.item_b3f026:hover:not(.disabled_b3f026),
-    .interactive_bf202d:hover
+    .interactive_bf202d:hover, .container_e97453:hover
     { background: var(--hover-1); }
 
     .redGlow__67645 { background-color: #c4957866 !important; } 
 
-    .input__0f084:not([readOnly]):focus, .container_a45028:focus-within
+    .input__0f084:not([readOnly]):focus, .container_a45028:focus-within, .topicsDropdownBase__0f481
     { border-color: #696779; }
 
     .numberBadge__2b1f5  { --status-danger: #DFBE80; }
