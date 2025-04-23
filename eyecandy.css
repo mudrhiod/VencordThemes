@@ -120,6 +120,7 @@
     --channels-default: #8E9297 !important;
     --channel-text-area-placeholder: var(--text-3);
     --chat-background: var(--bg-2);
+    --chat-background-default: var(--bg-2) !important;
     --chat-border: var(--bg-2);
     --chat-input-container-background: var(--bg-2);
     --chat-text-muted: var(--text-3) !important;
