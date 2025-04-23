@@ -117,7 +117,7 @@
     --button-secondary-text: var(--text-1) !important;
     --card-primary-bg: var(--bg-card) !important;
     --channel-icon: #BDBECC !important;
-    --channels-default: #8E9297 !important;
+    --channels-default: var(--text-2) !important;
     --channel-text-area-placeholder: var(--text-3);
     --chat-background: var(--bg-2);
     --chat-background-default: var(--bg-2) !important;
