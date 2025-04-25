@@ -222,10 +222,12 @@
     --text-positive: var(--candy-green) !important;
     --user-profile-overlay-background: var(--bg-1) !important;
     --white: var(--text-1);
+    --white-500: var(--bg-2);
 
     .messageContainer__95796, .messages__1ccd1, .messageGroupWrapper__45690,
     .container__6764b,
-    .container_e97453
+    .container_e97453,
+    .background__1fed1, .fieldList__1fed1
     { background: var(--bg-1); }
 
     .listContainer__527b1 .listElement__527b1 
@@ -235,14 +237,18 @@
     { background: var(--bg-2); }
 
     .guildStatusCopy_f9f04c
-    { color: var(--bg-1); }
+    { color: var(--bg-1) !important; }
 
-    .lookFilled__201d5, .botTagVerified__82f07, .botText__82f07, .newBadge_d541c3, .textBadge__2b1f5, .tabBar__133bf .addFriend__133bf.addFriend__133bf.addFriend__133bf,
+    .botTagVerified__82f07, .botText__82f07, .newBadge_d541c3, .textBadge__2b1f5, .tabBar__133bf .addFriend__133bf.addFriend__133bf.addFriend__133bf,
     .numberBadge__2b1f5, .iconBadge__650eb,
     .wrapper__6e9f8.selected__6e9f8 .childWrapper__6e9f8,
     .heading__6fd0e, .guildName_f9f04c, .tierCardCurrentTier_be48d0, .tierCardHeading_be48d0, .tierCardListItem_be48d0, .tierCardBoostRequirement_be48d0,
-    .newTopicsBarContainer__0f481, .newTopicsBarText__0f481
+    .newTopicsBarContainer__0f481, .newTopicsBarText__0f481,
+    .lookFilled__201d5.colorRed__201d5, .lookFilled__201d5.colorGreen__201d5
     { color: var(--bg-2) !important; }
+
+    .selected_b3f026
+    { --interactive-active: var(--bg-2); }
 
     .themedBackground__74017, .searchBar__97492, .searchBar_c7e907, .searchBar__5ec2f
     { background: var(--bg-4); }
@@ -254,7 +260,8 @@
     .barFill_a562c8, .grabber_a562c8, .akaBadge__488b1
     { background: var(--control-brand-foreground-new); }
 
-    :where(.buttonInner_fb7f94).icon_fb7f94, .button__5d39a
+    :where(.buttonInner_fb7f94).icon_fb7f94, .button__5d39a,
+    .upsellButton__71816
     { color: var(--text-1); }
 
     .lookFilled__201d5.colorPrimary__201d5
@@ -268,6 +275,9 @@
     .container__87bf1, .shinyButton__6a443:hover, .bar_a562c8
     { background: #696779 !important; }
  
+    .mention__3b95d
+    { background-color: var(--checkbox-background-checked); }
+
     .barButtonAlt__0f481
     { background-color: var(--candy-accent); }
 
