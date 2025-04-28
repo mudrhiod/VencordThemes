@@ -3,7 +3,7 @@
  * @author Mood
  * @authorId 807170846497570848
  * @description Vencord port of Hanibee's Eye Candy theme.
- * @version 1.0.0
+ * @version 1.0.1
  * @updateUrl https://mudaranrhiod.github.io/VencordThemes/eyecandy.css
  * @source https://github.com/mudaranrhiod/VencordThemes
  */
@@ -16,6 +16,7 @@
     --bg-3: #484654;
     --bg-4: #5A4D5E; /* input backgrounds */
     --bg-card: #474453;
+    --bg-header: #61606D;
     --button-primary: #5A5966;
     --button-primary-hover: #42414b;
     --candy-accent: #C3A16E;
@@ -34,7 +35,7 @@
     --background-base-low: var(--bg-1) !important;
     --background-base-lower: var(--bg-1) !important;
     --background-base-lowest: var(--bg-2) !important;
-    --background-code: var(--bg-2);
+    --background-code: var(--bg-card) !important;
     --background-feedback-critical: #c4957866 !important;
     --background-floating: var(--button-primary) !important;
     --background-mentioned: #BDBAEB17 !important;
@@ -76,6 +77,7 @@
     --blurple-50: var(--candy-accent-2);
     --border-normal: var(--bg-2);
     --border-subtle: var(--bg-2) !important;
+    --brand-10a: var(--hover-2) ;
     --brand-360: var(--candy-accent) !important;
     --brand-500: var(--candy-accent) !important;
     --button-danger-background: #C4967A !important;
@@ -222,39 +224,56 @@
     --text-positive: var(--candy-green) !important;
     --user-profile-overlay-background: var(--bg-1) !important;
     --white: var(--text-1);
+    --white-500: var(--bg-2);
 
     .messageContainer__95796, .messages__1ccd1, .messageGroupWrapper__45690,
     .container__6764b,
-    .container_e97453
+    .container_e97453,
+    .background__1fed1, .fieldList__1fed1
     { background: var(--bg-1); }
 
-    .listContainer__527b1 .listElement__527b1 
+    .listContainer__527b1 .listElement__527b1,
+    .badgeList__1fed1
     { background-color: var(--bg-1); }
 
     .folderIconContent__93fc9, .circleIconButton__5bc7e, .discoveryIcon_ef3116, .shinyButton__6a443
     { background: var(--bg-2); }
 
     .guildStatusCopy_f9f04c
-    { color: var(--bg-1); }
+    { color: var(--bg-1) !important; }
 
-    .lookFilled__201d5, .botTagVerified__82f07, .botText__82f07, .newBadge_d541c3, .textBadge__2b1f5, .tabBar__133bf .addFriend__133bf.addFriend__133bf.addFriend__133bf,
+    .botTagVerified__82f07, .botText__82f07, .newBadge_d541c3, .textBadge__2b1f5, .tabBar__133bf .addFriend__133bf.addFriend__133bf.addFriend__133bf,
     .numberBadge__2b1f5, .iconBadge__650eb,
     .wrapper__6e9f8.selected__6e9f8 .childWrapper__6e9f8,
     .heading__6fd0e, .guildName_f9f04c, .tierCardCurrentTier_be48d0, .tierCardHeading_be48d0, .tierCardListItem_be48d0, .tierCardBoostRequirement_be48d0,
-    .newTopicsBarContainer__0f481, .newTopicsBarText__0f481
+    .newTopicsBarContainer__0f481, .newTopicsBarText__0f481,
+    .lookFilled__201d5.colorRed__201d5, .lookFilled__201d5.colorGreen__201d5
     { color: var(--bg-2) !important; }
+
+    .selected_b3f026
+    { --interactive-active: var(--bg-2); }
 
     .themedBackground__74017, .searchBar__97492, .searchBar_c7e907, .searchBar__5ec2f
     { background: var(--bg-4); }
 
     .appDetailsContainer__50a54,
-    .connectContainer_c7f964, .connection_c7f964
-    { background: var(--bg-card) ;}
+    .connectContainer_c7f964, .connection_c7f964,
+    .box_f8c98c
+    { background: var(--bg-card);}
     
+    .vc-shiki-btn:last-child
+    { background-color: var(--button-primary) !important; }
+
     .barFill_a562c8, .grabber_a562c8, .akaBadge__488b1
     { background: var(--control-brand-foreground-new); }
 
-    :where(.buttonInner_fb7f94).icon_fb7f94, .button__5d39a
+    .connectionHeader_c7f964,
+    .header__5cea9
+    { background: var(--bg-header); }
+    
+    :where(.buttonInner_fb7f94).icon_fb7f94, .button__5d39a,
+    .upsellButton__71816,
+    .iconWrapper__6eb54
     { color: var(--text-1); }
 
     .lookFilled__201d5.colorPrimary__201d5
@@ -268,6 +287,9 @@
     .container__87bf1, .shinyButton__6a443:hover, .bar_a562c8
     { background: #696779 !important; }
  
+    .mention__3b95d
+    { background-color: var(--checkbox-background-checked); }
+
     .barButtonAlt__0f481
     { background-color: var(--candy-accent); }
 

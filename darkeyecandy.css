@@ -3,7 +3,7 @@
  * @author Mood
  * @authorId 807170846497570848
  * @description Vencord port of Hanibee's Eye Candy (Darker varient).
- * @version 1.0.0
+ * @version 1.0.1
  * @updateUrl https://mudaranrhiod.github.io/VencordThemes/darkeyecandy.css
  * @source https://github.com/mudaranrhiod/VencordThemes
  */
@@ -14,4 +14,6 @@
     --bg-1: #3B3A45;
     --bg-2: #33323C;
     --bg-3: #393843;
- }
+    --bg-card: #3A3743;
+    --bg-header: #494852;
+   }
