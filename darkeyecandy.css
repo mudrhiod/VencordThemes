@@ -16,4 +16,6 @@
     --bg-3: #393843;
     --bg-card: #3A3743;
     --bg-header: #494852;
+
+    .guildSection_d5cd2d { background: oklch(0.33 0.02 296.73); }
    }

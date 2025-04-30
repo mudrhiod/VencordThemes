@@ -15,18 +15,18 @@
     --bg-2: #3F3E4A; /* secondary background colours */
     --bg-3: #484654;
     --bg-4: #5A4D5E; /* input backgrounds */
-    --bg-card: #474453;
+    --bg-card: #474453; /* cards, popout menus */
     --bg-header: #61606D;
     --button-primary: #5A5966;
     --button-primary-hover: #42414b;
     --candy-accent: #C3A16E;
     --candy-accent-hover: #b48a4a;
     --candy-accent-2: #C88EAD;
-    --candy-green: #D1B681;
+    --candy-green: #D1B681; /* not for status icons */
     --hover-1: #CFC7D83E; /* hovers */
     --hover-2: #10132033; /* hovers */
-    --text-1: #E8E8EA;
-    --text-2: #BDBECC;
+    --text-1: #E8E8EA; /* primary text */
+    --text-2: #BDBECC; /* secondary text */
     --text-3: #CEB0CD; /* placeholder and muted text */
     
     --activity-card-background: var(--bg-2) !important;
@@ -206,7 +206,7 @@
     --red-345: #C4967A;
     --red-360: #1eff00;
     --red-400: #C4967A;
-    --red-500: #b47b57; /* sme hover which uses red as base button colour */
+    --red-500: #b47b57; /* some hover which uses red as base button colour */
     --redesign-button-overlay-alpha-background: #5A4D5E8a;
     --redesign-button-overlay-alpha-pressed-background: #5A4D5E; 
     --redesign-input-control-selected: #C2A775;
@@ -249,9 +249,6 @@
     .folderIconContent__93fc9, .circleIconButton__5bc7e, .discoveryIcon_ef3116, .shinyButton__6a443
     { background: var(--bg-2); }
 
-    .childWrapperNoHoverBg__6e9f8
-    { --background-surface-higher: var(--bg-2) !important; }
-
     .botTagVerified__82f07, .botText__82f07, .newBadge_d541c3, .textBadge__2b1f5, .tabBar__133bf .addFriend__133bf.addFriend__133bf.addFriend__133bf,
     .numberBadge__2b1f5, .iconBadge__650eb,
     .wrapper__6e9f8.selected__6e9f8 .childWrapper__6e9f8,
@@ -261,6 +258,7 @@
     .circleIconButton__5bc7e:hover
     { color: var(--bg-2) !important; }
 
+    .childWrapperNoHoverBg__6e9f8 { --background-surface-higher: var(--bg-2) !important; }
     .selected_b3f026{ --interactive-active: var(--bg-2); }
     .tierCardListIcon_be48d0 { --white: var(--bg-2); }
 
@@ -321,6 +319,8 @@
 
     .redGlow__67645
     { background-color: #c4957866 !important; } 
+
+    .guildSection_d5cd2d { background: oklch(0.38 0.0243 294.39); }
 
     .largeCountdownPill_e270ac
     { background-color: hsla(245, 9%, 27%); }
@@ -402,10 +402,10 @@
     .status_a423bd[style='background-color: rgb(216, 58, 65);'] {
         background-color: #C4967A !important;
     }
-    rect[fill='#593695'], svg[fill='#593695'] {
+    rect[fill='#9147ff'], svg[fill='#9147ff'] {
         fill: #8F669C;
     }
-    .status_a423bd[style='background-color: rgb(89, 54, 149);'] {
+    .status_a423bd[style='background-color: rgb(145, 71, 255);'] {
         background-color: #8F669C !important;
     }
     svg>path[fill='#40a258'] {
