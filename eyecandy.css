@@ -23,8 +23,8 @@
     --candy-accent-hover: #b48a4a;
     --candy-accent-2: #C88EAD;
     --candy-green: #D1B681; /* not for status icons */
-    --hover-1: #CFC7D83E; /* hovers */
-    --hover-2: #10132033; /* hovers */
+    --hover-1: #CFC7D83E; /* main hover */
+    --hover-2: #10132033; /* hover */
     --text-1: #E8E8EA; /* primary text */
     --text-2: #BDBECC; /* secondary text */
     --text-3: #CEB0CD; /* placeholder and muted text */
@@ -222,7 +222,7 @@
     --status-online: var(--candy-green);
     --status-idle: #D0B278;
     --status-positive-text: var(--bg-2);
-    --text-brand: #B17B93 !important;
+    --text-brand: #ffca92 !important;
     --text-feedback-critical: #C4967A !important;
     --text-muted: var(--text-3) !important;
     --text-link: #FFE1C1 !important;
@@ -246,7 +246,8 @@
     .guildStatusCopy_f9f04c
     { color: var(--bg-1) !important; }
 
-    .folderIconContent__93fc9, .circleIconButton__5bc7e, .discoveryIcon_ef3116, .shinyButton__6a443
+    .folderIconContent__93fc9, .circleIconButton__5bc7e, .discoveryIcon_ef3116, .shinyButton__6a443,
+    .container_faa96b
     { background: var(--bg-2); }
 
     .botTagVerified__82f07, .botText__82f07, .newBadge_d541c3, .textBadge__2b1f5, .tabBar__133bf .addFriend__133bf.addFriend__133bf.addFriend__133bf,
@@ -263,7 +264,8 @@
     .tierCardListIcon_be48d0 { --white: var(--bg-2); }
 
     .themedBackground__74017, .searchBar__97492, .searchBar_c7e907, .searchBar__5ec2f,
-    .searchBar__1ac1c
+    .searchBar__1ac1c,
+    .header_f369db
     { background: var(--bg-4); }
 
     .appDetailsContainer__50a54,
@@ -274,7 +276,6 @@
     .vc-shiki-btn:last-child
     { background-color: var(--button-primary) !important; }
 
-    .connectionHeader_c7f964,
     .header__5cea9
     { background: var(--bg-header); }
     
@@ -291,6 +292,9 @@
     .wrapper__926d7 a:link
     { color: var(--text-1) !important; }
 
+    .searchIcon_d9be46
+    { color: var(--text-3); }
+
     .side_b3f026 .themed_b3f026.item_b3f026:hover:not(.disabled_b3f026),
     .interactive_bf202d:hover, .container_e97453:hover
     { background: var(--hover-1); }
@@ -302,7 +306,7 @@
     { background-color: var(--candy-accent-hover); }
 
     .timestamp__75297, .sectionDivider__629e4,
-    .container__87bf1, .shinyButton__6a443:hover, .bar_a562c8
+    /*.container__87bf1,*/ .shinyButton__6a443:hover, .bar_a562c8
     { background: #696779 !important; }
  
     .barFill_a562c8, .grabber_a562c8, .akaBadge__488b1
@@ -314,13 +318,22 @@
     .joinOptionContent__959cb.active__959cb
     { background-color: #B17B93; }
 
-    .container__87bf1.checked__87bf1
-    { background: #C2A775!important; }
+    /* switches background */
+    div[class^="control_"] > div[class^="container_"][class*="checked_"] {
+      background-color: #C2A775 !important;
+    }
+    div[class^="vc-addon-card"] > div div[class^="container_"][class*="checked_"] {
+      background-color: #C2A775;
+    }
+    /* switches checkmark */
+    [class*="checked_"] > svg > svg > path { fill: #C2A775; }
 
     .redGlow__67645
     { background-color: #c4957866 !important; } 
 
-    .guildSection_d5cd2d { background: oklch(0.38 0.0243 294.39); }
+    .guildSection_d5cd2d,
+    .connectionHeader_c7f964
+    { background: oklch(0.38 0.0243 294.39); }
 
     .largeCountdownPill_e270ac
     { background-color: hsla(245, 9%, 27%); }
@@ -329,7 +342,8 @@
     { border: 1px solid var(--bg-2); }
 
     .input__0f084:not([readOnly]):focus, .container_a45028:focus-within, .topicsDropdownBase__0f481,
-    .addFriendInputWrapper__72ba7:focus-within
+    .addFriendInputWrapper__72ba7:focus-within,
+    .header_f369db
     { border-color: #696779; }
 
     .vc-gp-tab-bar, .vc-settings-tab-bar, .tabBar_d6f9e9, .tabBar_f8303a
@@ -346,9 +360,6 @@
 
     .nameAndDecorators__91a9d .botTagVerified__82f07 path[d^="M19.06"] { 
       fill: var(--bg-2); }
-
-    .container__87bf1 .slider__87bf1 path[d^="M7.89561"], path[d^="M4.08643"] { 
-      fill: var(--bg-2); }
     
     .checkboxWrapper_f525d3, .checkbox_f525d3.checked_f525d3 path[d^="M19.06"] { 
       fill: var(--bg-2); }
@@ -363,8 +374,7 @@
       fill: var(--bg-2); }
     
     .botTagVerified__82f07 path[d="M19.06 6.94a1.5 1.5 0 0 1 0 2.12l-8 8a1.5 1.5 0 0 1-2.12 0l-4-4a1.5 1.5 0 0 1 2.12-2.12L10 13.88l6.94-6.94a1.5 1.5 0 0 1 2.12 0Z"] {
-      fill: var(--bg-2)
-    }
+      fill: var(--bg-2); }
 
     .topGuildEmojiBadge_aeaaeb { background: linear-gradient(268.26deg,#C4967A, #B2814D); }
     .newlyAddedBadge_aeaaeb { background: linear-gradient(268.26deg, #AF986B, #D1B681); }
