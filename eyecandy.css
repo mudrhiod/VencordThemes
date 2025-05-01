@@ -326,7 +326,13 @@
       background-color: #C2A775;
     }
     /* switches checkmark */
-    [class*="checked_"] > svg > svg > path { fill: #C2A775; }
+    [class*="checked_"] > svg > svg > path { 
+      fill: #C2A775; }
+    /* switches white bit */
+    div[class^=control_]>div[class^=container_][class*=checked_]>svg>rect {
+      fill: var(--bg-2); }
+    div[class^=vc-addon-card]>div div[class^=container_][class*=checked_]>svg>rect { 
+      fill: var(--bg-2); }
 
     .redGlow__67645
     { background-color: #c4957866 !important; } 
