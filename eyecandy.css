@@ -455,7 +455,7 @@
     .status_a423bd[style='background-color: rgb(145, 71, 255);'] {
         background-color: #8F669C !important;
     }
-    svg>path[fill='#40a258'] {
+    svg>path[fill='#43a25a'] {
       fill: var(--candy-green);
     }
   }
