@@ -8,4 +8,4 @@
 - [Solar Bold](https://mudaranrhiod.github.io/VencordThemes/solar.css)
     - [More icons](https://mudaranrhiod.github.io/VencordThemes/solarmoreicons.css)* - Adds Solar icons to more places
 
-Anything marked with an aterix (*) requires the `Themes Atrributes` plugin enabled
+Anything marked with an asterix (*) requires the `Themes Atrributes` plugin enabled
