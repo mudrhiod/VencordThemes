@@ -79,6 +79,7 @@
     --border-normal: var(--bg-2);
     --border-subtle: var(--bg-2) !important;
     --brand-10a: var(--hover-2) ;
+    --brand-260: #AF986B;
     --brand-360: var(--candy-accent) !important;
     --brand-500: var(--candy-accent) !important;
     --brand-560: var(--candy-accent-hover) !important;
@@ -172,11 +173,11 @@
     --modal-background: var(--bg-2) !important;
     --modal-footer-background: var(--bg-2) !important;
     --notice-background-critical: #C4967A;
-    --notice-background-positive: #D1B681;
+    --notice-background-positive: #D1B681 !important;
     --notice-background-warning: #D0B278;
     --notice-text-critical: var(--bg-2);
     --notice-text-info: var(--bg-2);
-    --notice-text-positive: var(--bg-2);
+    --notice-text-positive: var(--bg-2) !important;
     --notice-text-warning: var(--bg-2);
     --opacity-black-40: var(--bg-1);
     --opacity-blurple-8: #C3A16E33;
@@ -251,7 +252,8 @@
 
     .folderIconContent__93fc9, .circleIconButton__5bc7e, .discoveryIcon_ef3116,
     .container_faa96b,
-    .folderIcon__48112
+    .folderIcon__48112,
+    .channelRow_e4503a
     { background: var(--bg-2); }
 
     .botTagVerified__82f07, .botText__82f07, .newBadge_d541c3, .textBadge__2b1f5, .tabBar__133bf .addFriend__133bf.addFriend__133bf.addFriend__133bf,
@@ -263,7 +265,8 @@
     .circleIconButton__5bc7e:hover
     { color: var(--bg-2) !important; }
 
-    .shinyButton__6a443  .button__5d39a, .shinyButton__6a443 .upsellButton__71816
+    .shinyButton__6a443  .button__5d39a, .shinyButton__6a443 .upsellButton__71816,
+    .pause_d70e0d
     { color: var(--bg-2); }
 
     .childWrapperNoHoverBg__6e9f8, .pendingFolderButtonIcon__93fc9 { --background-surface-higher: var(--bg-2) !important; }
@@ -282,8 +285,12 @@
     { background: var(--bg-card);}
     
     .vc-shiki-btn:last-child,
-    .folderGroupBackground__48112
+    .folderGroupBackground__48112,
+    .button_f563df
     { background-color: var(--button-primary) !important; }
+
+    .button_f563df:hover
+    { background: var(--button-primary-hover) !important; }
 
     .header__5cea9
     { background: var(--bg-header); }
@@ -366,7 +373,8 @@
     { background-color: #c4957866 !important; } 
 
     .guildSection_d5cd2d,
-    .connectionHeader_c7f964
+    .connectionHeader_c7f964,
+    .headerV2__50a54
     { background: oklch(0.38 0.0243 294.39); }
 
     .largeCountdownPill_e270ac
