@@ -319,7 +319,8 @@
     .barButtonAlt__0f481
     { background-color: var(--candy-accent); }
 
-    .shinyButton__6a443
+    .shinyButton__6a443,
+    .spineBorder__5b40b
     { background: var(--candy-accent-2); }
 
     .barButtonAlt__0f481:hover
