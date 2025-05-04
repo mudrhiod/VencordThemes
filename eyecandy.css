@@ -8,7 +8,10 @@
  * @source https://github.com/mudaranrhiod/VencordThemes
  */
 
-:root, .theme-dark {
+ @import url("https://nspc911.github.io/themes/vencord/RefreshedSeamlessChatBar.theme.css");
+ @import url("https://nspc911.github.io/themes/vencord/ChatRelatedAlertsAtTop.theme.css");
+
+ :root, .theme-dark {
 
     /* eye candy */
     --bg-1: #4B4957; /* primary background colours */
