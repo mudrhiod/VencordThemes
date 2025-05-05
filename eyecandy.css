@@ -263,7 +263,7 @@
     .numberBadge__2b1f5, .iconBadge__650eb,
     .wrapper__6e9f8.selected__6e9f8 .childWrapper__6e9f8,
     .heading__6fd0e, .guildName_f9f04c, .tierCardCurrentTier_be48d0, .tierCardHeading_be48d0, .tierCardListItem_be48d0, .tierCardBoostRequirement_be48d0, .unavailableCounterPillText_a466a0,
-    .newTopicsBarContainer__0f481, .newTopicsBarText__0f481,
+    
     .lookFilled__201d5.colorRed__201d5, .lookFilled__201d5.colorGreen__201d5,
     .circleIconButton__5bc7e:hover
     { color: var(--bg-2) !important; }
@@ -309,7 +309,8 @@
     { color: var(--text-1); }
 
     .lookFilled__201d5.colorPrimary__201d5,
-    .wrapper__926d7 a:link
+    .wrapper__926d7 a:link,
+    .newTopicsBarContainer__0f481
     { color: var(--text-1) !important; }
 
     .searchIcon_d9be46
