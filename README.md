@@ -1,3 +1,9 @@
+---
+layout: page
+title: "My New Page"
+permalink: /test/
+---
+
 ### Themes
 
 - [Eye Candy](https://mudaranrhiod.github.io/VencordThemes/eyecandy.css) 
