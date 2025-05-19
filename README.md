@@ -1,8 +1,6 @@
----
 layout: page
 title: "My New Page"
 permalink: /test/
----
 
 ### Themes
 
