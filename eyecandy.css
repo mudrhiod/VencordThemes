@@ -13,179 +13,187 @@
 
  :root, .theme-dark {
 
-    /* eye candy */
-    --bg-1: #4B4957; /* primary background colours */
-    --bg-2: #3F3E4A; /* secondary background colours */
-    --bg-3: #484654;
-    --bg-4: #5A4D5E; /* input backgrounds */
-    --bg-card: #474453; /* cards, popout menus */
-    --bg-header: #61606D;
-    --button-primary: #5A5966;
-    --button-primary-hover: #42414b;
-    --candy-accent: #C3A16E;
-    --candy-accent-hover: #b48a4a;
-    --candy-accent-2: #C88EAD;
-    --candy-accent-2-hover: #b86b94;
-    --candy-green: #D1B681; /* not for status icons */
-    --hover-1: #CFC7D83E; /* main hover */
-    --hover-2: #10132033; /* hover */
-    --text-1: #E8E8EA; /* primary text */
-    --text-2: #BDBECC; /* secondary text */
-    --text-3: #CEB0CD; /* placeholder and muted text */
+    /* eye candy vars */
+    --ec-bg1: oklch(41.264% 0.0233 291.865);
+    --ec-bg2: oklch(36.954% 0.02048 289.149);
+    --ec-bg3: oklch(40.149% 0.02346 291.828);
+    --ec-bginput: oklch(43.946% 0.03201 318.121); /* input backgrounds */
+    --ec-bgcard: oklch(39.54% 0.02534 294.348); /* cards, popout menus, floating elements */
+
+    --ec-button: oklch(46.963% 0.02088 289.062);
+    --ec-button-hover: oklch(38.009% 0.01695 290.119);
     
-    --activity-card-background: var(--bg-2) !important;
-    --app-background-frame: var(--bg-3) !important;
-    --background-accent: var(--candy-accent-2) !important;
-    --background-base-low: var(--bg-1) !important;
-    --background-base-lower: var(--bg-1) !important;
-    --background-base-lowest: var(--bg-2) !important;
-    --background-code: var(--bg-card) !important;
+    --ec-accent: oklch(72.785% 0.07856 77.143);
+    --ec-accenthover: oklch(66.032% 0.09643 76.273);
+    --ec-accent2: oklch(71.271% 0.08103 345.993);
+    --ec-accent2-hover: oklch(62.56% 0.11033 347.554);
+
+    --ec-red: oklch(70.712% 0.06975 52.907);
+    --ec-green: oklch(78.71% 0.07614 83.795);
+    --ec-yellow: oklch(77.649% 0.08304 83.296);
+
+    --ec-hover1: #CFC7D83E; /* main hover */
+    --ec-hover2: #10132033; /* hover */
+
+    --ec-text1: oklch(93.157% 0.00278 285.781);
+    --ec-text2: oklch(80.502% 0.01969 282.637);
+    --ec-text3: oklch(79.22% 0.05233 327.013); /* placeholder and muted text */
+    
+    --activity-card-background: var(--ec-bg2) !important;
+    --app-background-frame: var(--ec-bg3) !important;
+    --background-accent: var(--ec-accent2) !important;
+    --background-base-low: var(--ec-bg1) !important;
+    --background-base-lower: var(--ec-bg1) !important;
+    --background-base-lowest: var(--ec-bg2) !important;
+    --background-code: var(--ec-bgcard) !important;
     --background-feedback-critical: #c4957866 !important;
-    --background-floating: var(--button-primary) !important;
+    --background-feedback-warning: #BDBAEB26;
+    --background-floating: var(--ec-button) !important;
     --background-mentioned: #BDBAEB17 !important;
-    --background-mentioned-hover: var(--hover-2) !important;
+    --background-mentioned-hover: var(--ec-hover2) !important;
     --background-message-automod: rgba(244, 219, 214, 0.05);
     --background-message-automod-hover: rgba(244, 219, 214, 0.1);
     --background-message-highlight: #3f3e4abf !important;
     --background-message-highlight-hover: #3e4a42bf !important;
     --background-message-hover: #10132026 !important;
-    --background-mobile-primary: var(--bg-2);
-    --background-mobile-secondary: var(--bg-1);
-    --background-mod-faint: var(--bg-card) !important;
-    --background-modifier-active: var(--button-primary) !important;
+    --background-mobile-primary: var(--ec-bg2);
+    --background-mobile-secondary: var(--ec-bg1);
+    --background-mod-faint: var(--ec-bgcard) !important;
+    --background-modifier-active: var(--ec-button) !important;
     --background-modifier-accent: #696779 !important;
-    --background-modifier-hover: var(--hover-1) !important;
-    --background-modifier-selected: var(--button-primary) !important;
-    --background-mod-normal: var(--button-primary);
-    --background-mod-strong: var(--bg-2);
-    --background-mod-subtle: var(--bg-2) !important;
-    --background-nested-floating: var(--bg-1);
-    --background-primary: var(--bg-1) !important;
-    --background-secondary: var(--bg-2) !important;
-    --background-secondary-alt: var(--bg-card) !important;
-    --background-surface-high: var(--bg-2) !important;
-    --background-surface-higher: var(--bg-card) !important;
-    --background-surface-highest: var(--bg-card) !important;
-    --background-tertiary: var(--bg-2) !important;
-    --badge-brand-text: var(--bg-2);
-    --bg-base-secondary: var(--bg-2) !important;
-    --bg-base-tertiary: var(--bg-2) !important;
-    --bg-brand: var(--candy-accent) !important;
+    --background-modifier-hover: var(--ec-hover1) !important;
+    --background-modifier-selected: var(--ec-button) !important;
+    --background-mod-normal: var(--ec-button);
+    --background-mod-strong: var(--ec-bg2);
+    --background-mod-subtle: var(--ec-bg2) !important;
+    --background-nested-floating: var(--ec-bg1);
+    --background-primary: var(--ec-bg1) !important;
+    --background-secondary: var(--ec-bg2) !important;
+    --background-secondary-alt: var(--ec-bgcard) !important;
+    --background-surface-high: var(--ec-bg2) !important;
+    --background-surface-higher: var(--ec-bgcard) !important;
+    --background-surface-highest: var(--ec-bgcard) !important;
+    --background-tertiary: var(--ec-bg2) !important;
+    --badge-brand-text: var(--ec-bg2);
+    --bg-base-secondary: var(--ec-bg2) !important;
+    --bg-base-tertiary: var(--ec-bg2) !important;
+    --bg-brand: var(--ec-accent) !important;
     --bg-mod-faint: #51505e !important;
     --bg-mod-strong: #696779 !important;
-    --bg-mod-subtle: var(--hover-1) !important;
-    --bg-overlay-floating: var(--bg-1);
-    --bg-surface-overlay: var(--bg-card) !important;
-    --bg-surface-raised: var(--bg-1);
-    --black-500: var(--bg-2);
-    --blurple-50: var(--candy-accent-2);
-    --border-normal: var(--bg-2);
-    --border-subtle: var(--bg-2) !important;
-    --brand-10a: var(--hover-2) ;
+    --bg-mod-subtle: var(--ec-hover1) !important;
+    --bg-overlay-floating: var(--ec-bg1);
+    --bg-surface-overlay: var(--ec-bgcard) !important;
+    --bg-surface-raised: var(--ec-bg1);
+    --black-500: var(--ec-bg2);
+    --blurple-50: var(--ec-accent2);
+    --border-normal: var(--ec-bg2);
+    --border-subtle: var(--ec-bg2) !important;
+    --brand-10a: var(--ec-hover2) ;
     --brand-260: #AF986B;
-    --brand-360: var(--candy-accent) !important;
-    --brand-500: var(--candy-accent) !important;
-    --brand-560: var(--candy-accent-hover) !important;
-    --button-danger-background: #C4967A !important;
+    --brand-360: var(--ec-accent) !important;
+    --brand-500: var(--ec-accent) !important;
+    --brand-560: hsl(36, 41%, 71%) !important;
+    --button-danger-background: var(--ec-red) !important;
     --button-danger-background-active: #956141 !important;
-    --button-danger-background-hover: #b47b57 !important;
-    --button-filled-brand-background: var(--candy-accent);
+    --button-danger-background-hover: color-mix(in oklch, var(--ec-red), black 10%);
+    --button-filled-brand-background: var(--ec-accent);
     --button-filled-brand-background-active: #906e3c !important;
-    --button-filled-brand-background-hover: var(--candy-accent-hover);
-    --button-filled-brand-border: var(--candy-accent) !important;
-    --button-filled-brand-inverted-background: var(--candy-accent-2) ;
+    --button-filled-brand-background-hover: var(--ec-accenthover);
+    --button-filled-brand-border: var(--ec-accent) !important;
+    --button-filled-brand-inverted-background: var(--ec-accent2) ;
     --button-filled-brand-inverted-background-active: #a24e7b !important;
     --button-filled-brand-inverted-background-hover: #b86b94 !important;
-    --button-filled-brand-inverted-text: var(--bg-2);
-    --button-filled-brand-text: var(--bg-2);
-    --button-outline-danger-background: #C4967A !important;
+    --button-filled-brand-inverted-text: var(--ec-bg2);
+    --button-filled-brand-text: var(--ec-bg2);
+    --button-outline-danger-background: var(--ec-red) !important;
     --button-outline-danger-background-active: #956141 !important;
-    --button-outline-danger-background-hover: #b47b57 !important;
-    --button-outline-danger-border: #C4967A !important;
+    --button-outline-danger-background-hover: color-mix(in oklch, var(--ec-red), black 10%);
+    --button-outline-danger-border: var(--ec-red) !important;
     --button-outline-danger-border-active: #956141 !important;
-    --button-outline-danger-border-hover: #b47b57 !important;
-    --button-outline-danger-text: var(--bg-2) !important;
-    --button-outline-danger-text-active: var(--bg-2) !important;
-    --button-outline-danger-text-hover: var(--bg-2) !important;
-    --button-outline-primary-background-hover: var(--candy-accent-hover);
-    --button-outline-primary-border: var(--candy-accent);
-    --button-outline-primary-border-active: var(--candy-accent);
-    --button-outline-primary-border-hover: var(--candy-accent-hover);
-    --button-outline-primary-text: var(--text-1);
-    --button-outline-primary-text-active: var(--bg-2);
-    --button-outline-primary-text-hover: var(--bg-2);
+    --button-outline-danger-border-hover: color-mix(in oklch, var(--ec-red), black 10%);
+    --button-outline-danger-text: var(--ec-bg2) !important;
+    --button-outline-danger-text-active: var(--ec-bg2) !important;
+    --button-outline-danger-text-hover: var(--ec-bg2) !important;
+    --button-outline-primary-background-hover: var(--ec-accenthover);
+    --button-outline-primary-border: var(--ec-accent);
+    --button-outline-primary-border-active: var(--ec-accent);
+    --button-outline-primary-border-hover: var(--ec-accenthover);
+    --button-outline-primary-text: var(--ec-text1);
+    --button-outline-primary-text-active: var(--ec-bg2);
+    --button-outline-primary-text-hover: var(--ec-bg2);
     --button-positive-background: #D1B681 !important;
     --button-positive-background-active: #ac883e !important;
     --button-positive-background-disabled: #D1B681;
     --button-positive-background-hover: #c3a15c !important;
-    --button-secondary-background: var(--button-primary) !important;
+    --button-secondary-background: var(--ec-button) !important;
     --button-secondary-background-active: #29282e !important;
-    --button-secondary-background-disabled: var(--button-primary);
-    --button-secondary-background-hover: var(--button-primary-hover) !important;
-    --button-secondary-text: var(--text-1) !important;
-    --card-primary-bg: var(--bg-card) !important;
+    --button-secondary-background-disabled: var(--ec-button);
+    --button-secondary-background-hover: var(--ec-button-hover) !important;
+    --button-secondary-text: var(--ec-text1) !important;
+    --card-primary-bg: var(--ec-bgcard) !important;
     --channel-icon: #BDBECC !important;
-    --channels-default: var(--text-2) !important;
-    --channel-text-area-placeholder: var(--text-3);
-    --chat-background: var(--bg-2);
-    --chat-background-default: var(--bg-2) !important;
-    --chat-border: var(--bg-2);
-    --chat-input-container-background: var(--bg-2);
-    --chat-text-muted: var(--text-3) !important;
+    --channels-default: var(--ec-text2) !important;
+    --channeltextarea-background: var(--ec-bgcard);
+    --channel-text-area-placeholder: var(--ec-text3);
+    --chat-background: var(--ec-bg2);
+    --chat-background-default: var(--ec-bg2) !important;
+    --chat-border: var(--ec-bg2);
+    --chat-input-container-background: var(--ec-bg2);
+    --chat-text-muted: var(--ec-text3) !important;
     --checkbox-background-checked: #C5A361 !important;
     --checkbox-border-checked: #C2A775 !important;
     --control-brand-foreground-new: #9F8657 !important;
-    --custom-channel-members-bg: var(--bg-1);
-    --custom-status-bubble-background: var(--bg-2) !important;
-    --custom-status-bubble-background-color: var(--bg-1) !important;
-    --deprecated-text-input-bg: var(--bg-4) !important;
+    --custom-channel-members-bg: var(--ec-bg1);
+    --custom-status-bubble-background: var(--ec-bg2) !important;
+    --custom-status-bubble-background-color: var(--ec-bg1) !important;
+    --deprecated-text-input-bg: var(--ec-bginput) !important;
     --deprecated-text-input-border: #696779 !important;
-    --green-360: var(--candy-green);
+    --green-360: var(--ec-green);
     --guild-boosting-blue: #AF986B;
     --guild-boosting-pink: #BF91A8;
     --guild-boosting-purple: #BF91A8;
-    --header-primary: var(--text-1) !important;
-    --header-secondary: var(--text-2) !important;
-    --home-background: var(--bg-2);
-    --icon-default: var(--text-1);
-    --icon-muted: #5eff00;
-    --icon-primary: var(--text-1);
-    --icon-secondary: var(--text-1) !important;
-    --icon-tertiary: var(--text-2) !important;
-    --info-danger-text: var(--text-1);
-    --info-help-background: #D0B27826 !important;
-    --info-help-foreground: #D0B278;
-    --info-help-text: var(--text-1);
+    --header-primary: var(--ec-text1) !important;
+    --header-secondary: var(--ec-text2) !important;
+    --home-background: var(--ec-bg2);
+    --icon-default: var(--ec-text1);
+    --icon-muted: var(--ec-text2);
+    --icon-primary: var(--ec-text1);
+    --icon-secondary: var(--ec-text1) !important;
+    --icon-tertiary: var(--ec-text2) !important;
+    --info-danger-text: var(--ec-text1);
+    --info-help-background: var(--ec-yellow)26 !important;
+    --info-help-foreground: var(--ec-yellow);
+    --info-help-text: var(--ec-text1);
     --info-positive-background: #D1B68126;
     --info-positive-foreground: #D1B681;
-    --info-positive-text: var(--text-1);
+    --info-positive-text: var(--ec-text1);
     --info-warning-background: #BDBAEB26 !important;
     --info-warning-foreground: #BDBAEB !important;
-    --info-warning-text: var(--text-1) !important;
-    --input-background: var(--bg-4) !important;
-    --input-placeholder-text: var(--text-3) !important;
-    --interactive-active: var(--text-1);
-    --interactive-hover: var(--text-1);
-    --interactive-muted: var(--text-3);
-    --interactive-normal: var(--text-1) !important;
-    --logo-primary: var(--text-1);
+    --info-warning-text: var(--ec-text1) !important;
+    --input-background: var(--ec-bginput) !important;
+    --input-placeholder-text: var(--ec-text3) !important;
+    --interactive-active: var(--ec-text1);
+    --interactive-hover: var(--ec-text1);
+    --interactive-muted: var(--ec-text3);
+    --interactive-normal: var(--ec-text1) !important;
+    --logo-primary: var(--ec-text1);
     --mention-background: #DFBE804D !important;
     --mention-foreground: #DFBE80 !important;
     --message-reacted-background: #C88EAD33 !important;
-    --message-reacted-text: var(--text-1) !important;
-    --modal-background: var(--bg-2) !important;
-    --modal-footer-background: var(--bg-2) !important;
-    --notice-background-critical: #C4967A;
+    --message-reacted-text: var(--ec-text1) !important;
+    --modal-background: var(--ec-bg2) !important;
+    --modal-footer-background: var(--ec-bg2) !important;
+    --notice-background-critical: var(--ec-red);
     --notice-background-positive: #D1B681 !important;
-    --notice-background-warning: #D0B278;
-    --notice-text-critical: var(--bg-2);
-    --notice-text-info: var(--bg-2);
-    --notice-text-positive: var(--bg-2) !important;
-    --notice-text-warning: var(--bg-2);
-    --opacity-black-40: var(--bg-1);
+    --notice-background-warning: var(--ec-yellow);
+    --notice-text-critical: var(--ec-bg2);
+    --notice-text-info: var(--ec-bg2);
+    --notice-text-positive: var(--ec-bg2) !important;
+    --notice-text-warning: var(--ec-bg2);
+    --opacity-black-40: var(--ec-bg1);
     --opacity-blurple-8: #C3A16E33;
     --opacity-blurple-16: #C3A16E33;
-    --plum-23: var(--bg-2);
+    --plum-23: var(--ec-bg2);
     --polls-victor-fill: #D1B68133;
     --polls-voted-fill: #696779;
     --premium-perk-blue: #AF986B;
@@ -195,7 +203,7 @@
     --premium-perk-orange: #B2814D;
     --premium-perk-pink: #C88EAD;
     --premium-perk-purple: #7D2D59;
-    --premium-perk-yellow: #D0B278;
+    --premium-perk-yellow: var(--ec-yellow);
     --premium-tier-0-blue: #AF986B;
     --premium-tier-0-header-gradient-1: #EEB1CA;
     --premium-tier-0-header-gradient-2: #DCB975;
@@ -208,56 +216,65 @@
     --premium-tier-2-pink-for-gradients: #BF91A8;
     --premium-tier-2-purple-for-gradients: #BF91A8;
     --premium-tier-2-purple-for-gradients-2: #BF91A8;
-    --primary-700: var(--button-primary);
-    --primary-800: var(--bg-2);
-    --red-345: #C4967A;
+    --primary-700: var(--ec-button);
+    --primary-800: var(--ec-bg2);
+    --red-345: var(--ec-red);
     --red-360: #1eff00;
-    --red-400: #C4967A;
-    --red-500: #b47b57; /* some hover which uses red as base button colour */
+    --red-400: var(--ec-red);
+    --red-500: color-mix(in oklch, var(--ec-red), black 10%); /* some hover which uses red as base button colour */
     --redesign-button-overlay-alpha-background: #5A4D5E8a;
     --redesign-button-overlay-alpha-pressed-background: #5A4D5E; 
     --redesign-input-control-selected: #C2A775;
-    --scrollbar-auto-scrollbar-color-track: var(--bg-2);
-    --scrollbar-auto-thumb: var(--candy-accent) !important;
-    --scrollbar-auto-track: var(--bg-2);
-    --scrollbar-thin-thumb: var(--candy-accent) !important;
+    --scrollbar-auto-scrollbar-color-track: var(--ec-bg2);
+    --scrollbar-auto-thumb: var(--ec-accent) !important;
+    --scrollbar-auto-track: var(--ec-bg2);
+    --scrollbar-thin-thumb: var(--ec-accent) !important;
     --scrollbar-thin-track: transparent;
-    --spine-default: var(--candy-accent-2) !important;
+    --selected-tab-item-color: var(--text-brand) !important;
+    --spine-default: var(--ec-accent2) !important;
     --spoiler-hidden-background: #5eff00;
-    --status-danger: #C4967A;
-    --status-danger-background: #C4967A;
-    --status-online: var(--candy-green);
-    --status-idle: #D0B278;
-    --status-positive-text: var(--bg-2);
+    --status-danger: var(--ec-red);
+    --status-danger-background: var(--ec-red);
+    --status-online: var(--ec-green);
+    --status-idle: oklch(72.759% 0.09315 83.593);
+    --status-positive-text: var(--ec-bg2);
     --text-brand: #ffca92 !important;
-    --text-feedback-critical: #C4967A !important;
-    --text-muted: var(--text-3) !important;
+    --text-default: var(--ec-text1);
+    --text-feedback-critical: var(--ec-red) !important;
+    --text-feedback-positive: var(--ec-green);
+    --text-feedback-warning: #BDBAEB !important;
+    --text-muted: var(--ec-text3) !important;
     --text-link: #FFE1C1 !important;
-    --text-link-low-saturation: var(--candy-accent);
-    --text-positive: var(--candy-green) !important;
-    --user-profile-overlay-background: var(--bg-1) !important;
-    --white: var(--text-1);
-    --white-500: var(--bg-2);
+    --text-link-low-saturation: var(--ec-accent);
+    --text-positive: var(--ec-green) !important;
+    --user-profile-overlay-background: var(--ec-bg1) !important;
+    --white: var(--ec-text1);
+    --white-500: var(--ec-bg2);
     --yellow-300: #BDBAEB;
 
     .messageContainer__95796, .messages__1ccd1, .messageGroupWrapper__45690,
     .container__6764b,
     .container_e97453,
-    .background__1fed1, .fieldList__1fed1
-    { background: var(--bg-1); }
+    .background__1fed1, .fieldList__1fed1 {
+       background: var(--ec-bg1); 
+    }
 
     .listContainer__527b1 .listElement__527b1,
-    .badgeList__1fed1
-    { background-color: var(--bg-1); }
+    .badgeList__1fed1 {
+       background-color: var(--ec-bg1); 
+    }
 
-    .guildStatusCopy_f9f04c
-    { color: var(--bg-1) !important; }
+    .guildStatusCopy_f9f04c {
+       color: var(--ec-bg1) !important;
+    }
 
     .folderIconContent__93fc9, .circleIconButton__5bc7e, .discoveryIcon_ef3116,
     .container_faa96b,
     .folderIcon__48112,
-    .channelRow_e4503a
-    { background: var(--bg-2); }
+    .channelRow_e4503a, 
+    .topicsScroller__0f481 {
+        background: var(--ec-bg2);
+    }
 
     .botTagVerified__82f07, .botText__82f07, .newBadge_d541c3, .textBadge__2b1f5, .tabBar__133bf .addFriend__133bf.addFriend__133bf.addFriend__133bf,
     .numberBadge__2b1f5, .iconBadge__650eb,
@@ -265,38 +282,52 @@
     .heading__6fd0e, .guildName_f9f04c, .tierCardCurrentTier_be48d0, .tierCardHeading_be48d0, .tierCardListItem_be48d0, .tierCardBoostRequirement_be48d0, .unavailableCounterPillText_a466a0,
     
     .lookFilled__201d5.colorRed__201d5, .lookFilled__201d5.colorGreen__201d5,
-    .circleIconButton__5bc7e:hover
-    { color: var(--bg-2) !important; }
+    .circleIconButton__5bc7e:hover {
+        color: var(--ec-bg2) !important;
+    }
 
     .shinyButton__6a443  .button__5d39a, .shinyButton__6a443 .upsellButton__71816,
-    .pause_d70e0d
-    { color: var(--bg-2); }
+    .pause_d70e0d { 
+        color: var(--ec-bg2);
+    }
 
-    .childWrapperNoHoverBg__6e9f8, .pendingFolderButtonIcon__93fc9 { --background-surface-higher: var(--bg-2) !important; }
-    .selected_b3f026{ --interactive-active: var(--bg-2); }
-    .tierCardListIcon_be48d0 { --white: var(--bg-2); }
+    .childWrapperNoHoverBg__6e9f8, .pendingFolderButtonIcon__93fc9 { 
+        --background-surface-higher: var(--ec-bg2) !important;
+    }
+    .selected_b3f026 { 
+        --interactive-active: var(--ec-bg2);
+    }
+    .tierCardListIcon_be48d0 { 
+        --white: var(--ec-bg2);
+    }
 
     .themedBackground__74017, .searchBar__97492, .searchBar_c7e907, .searchBar__5ec2f,
     .searchBar__1ac1c,
-    .header_f369db
-    { background: var(--bg-4); }
+    .header_f369db { 
+        background: var(--ec-bginput);
+    }
 
     .appDetailsContainer__50a54,
     .connectContainer_c7f964, .connection_c7f964,
     .box_f8c98c,
-    .pollContainer_b7e1cb
-    { background: var(--bg-card);}
+    .pollContainer_b7e1cb { 
+        background: var(--ec-bgcard);
+    }
     
     .vc-shiki-btn:last-child,
     .folderGroupBackground__48112,
-    .button_f563df
-    { background-color: var(--button-primary) !important; }
+    .button_f563df { 
+        background-color: var(--ec-button) !important; 
+    }
 
-    .button_f563df:hover
-    { background: var(--button-primary-hover) !important; }
+    .button_f563df:hover { 
+        background: var(--ec-button-hover) !important; 
+    }
 
-    .header__5cea9
-    { background: var(--bg-header); }
+    /* colour for headers */
+    .header__5cea9 { 
+        background: var(oklch(49.459% 0.02061 289.113));
+    }
     
     :where(.buttonInner_fb7f94).icon_fb7f94, .button__5d39a,
     .upsellButton__71816,
@@ -305,52 +336,84 @@
     .circleIconButton__5bc7e,
     .durationTimeWrapper_cf09d8,
     .buttonContainer__3ce43 .lookFilled__201d5.colorBrand__201d5,
-    .message_fcf29c
-    { color: var(--text-1); }
+    .message_fcf29c, .tooltipBlack__382e7 { 
+        color: var(--ec-text1);
+    }
 
     .lookFilled__201d5.colorPrimary__201d5,
     .wrapper__926d7 a:link,
-    .newTopicsBarContainer__0f481
-    { color: var(--text-1) !important; }
+    .newTopicsBarContainer__0f481 { 
+        color: var(--ec-text1) !important;
+    }
 
-    .searchIcon_d9be46
-    { color: var(--text-3); }
+    .caret_c1e9c4 {
+        color: var(--ec-text2);
+    }
+
+    .searchIcon_d9be46 { 
+        color: var(--ec-text3);
+    }
 
     .side_b3f026 .themed_b3f026.item_b3f026:hover:not(.disabled_b3f026),
-    .interactive_bf202d:hover, .container_e97453:hover
-    { background: var(--hover-1); }
+    .interactive_bf202d:hover, .container_e97453:hover, .colorDefault_c1e9c4.focused_c1e9c4, button.button__67645.enabled__67645:hover { 
+        background: var(--ec-hover1); 
+    }
 
-    .barButtonAlt__0f481
-    { background-color: var(--candy-accent); }
+    .result__2dc39:hover:after {
+        background: #CFC7D83E;
+    }
+
+    .barButtonAlt__0f481 {
+        background-color: var(--ec-accent);
+    }
 
     .shinyButton__6a443,
-    .spineBorder__5b40b
-    { background: var(--candy-accent-2); }
+    .spineBorder__5b40b { 
+        background: var(--ec-accent2);
+    }
 
-    .barButtonAlt__0f481:hover
-    { background-color: var(--candy-accent-hover); }
+    .barButtonAlt__0f481:hover {
+        background-color: var(--ec-accenthover);
+    }
 
-    .shinyButton__6a443:hover
-    { background-color: var(--candy-accent-2-hover); }
+    .shinyButton__6a443:hover {
+        background-color: var(--ec-accent2-hover);
+    }
+
+    .colorDanger_c1e9c4.focused_c1e9c4 {
+      background: #c4957866 !important;
+    }
 
     .timestamp__75297, .sectionDivider__629e4,
-    .bar_a562c8
-    { background: #696779 !important; }
+    .bar_a562c8, .chipletContainerInner__10651 { 
+        background: #696779 !important; 
+    }
 
-    .lookFilled__201d5.colorPrimary__201d5
-    { border-color: #696779; }
+    .lookFilled__201d5.colorPrimary__201d5 { 
+        border-color: #696779;
+    }
     
-    .panels_c48ade
-    { border: 1px solid #69677980; }
+    .panels_c48ade { 
+        border: 1px solid #69677980;
+    }
  
-    .barFill_a562c8, .grabber_a562c8, .akaBadge__488b1
-    { background: var(--control-brand-foreground-new); }
+    .barFill_a562c8, .grabber_a562c8, .akaBadge__488b1 {
+        background: var(--control-brand-foreground-new);
+    }
 
-    .mention__3b95d
-    { background-color: var(--checkbox-background-checked); }
+    .mention__3b95d { 
+        background-color: var(--checkbox-background-checked); 
+    }
 
-    .joinOptionContent__959cb.active__959cb
-    { background-color: #B17B93; }
+    .joinOptionContent__959cb.active__959cb { 
+        background-color: #B17B93; 
+    }
+
+    .popoutContainer__0f481 {
+        -webkit-backdrop-filter: none;
+        backdrop-filter: none;
+        background-color: var(--ec-bgcard);
+    }
 
     /* switches background */
     div[class^="control_"] > div[class^="container_"] {
@@ -370,9 +433,9 @@
       fill: #C2A775; }
     /* switches white bit */
     div[class^=control_]>div[class^=container_][class*=checked_]>svg>rect {
-      fill: var(--bg-2); }
+      fill: var(--ec-bg2); }
     div[class^=vc-addon-card]>div div[class^=container_][class*=checked_]>svg>rect { 
-      fill: var(--bg-2); }
+      fill: var(--ec-bg2); }
     
     .redGlow__67645
     { background-color: #c4957866 !important; } 
@@ -386,7 +449,7 @@
     { background-color: hsla(245, 9%, 27%); }
 
     .unavailableCounterPill_a466a0
-    { border: 1px solid var(--bg-2); }
+    { border: 1px solid var(--ec-bg2); }
 
     .input__0f084:not([readOnly]):focus, .container_a45028:focus-within, .topicsDropdownBase__0f481,
     .addFriendInputWrapper__72ba7:focus-within,
@@ -406,27 +469,27 @@
     .numberBadge__2b1f5  { --status-danger: #DFBE80; }
 
     .refreshIcon__001a7 { 
-      fill: var(--bg-2); }
+      fill: var(--ec-bg2); }
 
     .nameAndDecorators__91a9d .botTagVerified__82f07 path[d^="M19.06"] { 
-      fill: var(--bg-2); }
+      fill: var(--ec-bg2); }
     
     .checkboxWrapper_f525d3, .checkbox_f525d3.checked_f525d3 path[d^="M19.06"] { 
-      fill: var(--bg-2); }
+      fill: var(--ec-bg2); }
     
     .checkboxWrapper_f525d3, .checkIcon__270d7 path[d^="M21.7"] { 
-      fill: var(--bg-2); }
+      fill: var(--ec-bg2); }
 
     .container__5b40b .spine__5b40b path[d^="M0 13H2c0"], path[d^="M6 18V16H9v2H6Zm3"] { 
-      fill: var(--candy-accent-2); }
+      fill: var(--ec-accent2); }
   
     .icon_a14595 path[d^="M23 12a11 11 0 1 1-22 0 11 11 0 0 1 22 0ZM7.74 9.3A2 2 0 0 1 9.3 7.75l7.22-1.45a1 1 0 0 1 1.18 1.18l-1.45 7.22a2 2 0 0 1-1.57 1.57l-7.22 1.45a1 1 0 0 1-1.18-1.18L7.74 9.3Z"] {
-      fill: var(--bg-2); }
+      fill: var(--ec-bg2); }
     
     .botTagVerified__82f07 path[d="M19.06 6.94a1.5 1.5 0 0 1 0 2.12l-8 8a1.5 1.5 0 0 1-2.12 0l-4-4a1.5 1.5 0 0 1 2.12-2.12L10 13.88l6.94-6.94a1.5 1.5 0 0 1 2.12 0Z"] {
-      fill: var(--bg-2); }
+      fill: var(--ec-bg2); }
 
-    .topGuildEmojiBadge_aeaaeb { background: linear-gradient(268.26deg,#C4967A, #B2814D); }
+    .topGuildEmojiBadge_aeaaeb { background: linear-gradient(268.26deg,var(--ec-red), #B2814D); }
     .newlyAddedBadge_aeaaeb { background: linear-gradient(268.26deg, #AF986B, #D1B681); }
     .newlyAddedBadge_fc7141 { background: #D1B681 !important; }
     .newlyAddedHighlight_fc7141 { border: 1px solid #AF986B !important;  }
@@ -435,40 +498,40 @@
 
     .lockIcon__2666b { content: url(https://mudaranrhiod.github.io/discord-iconpacks/vencord/513846bd926efc73.svg); }
 
-    /*.messagelogger-deleted { background-color: #c4967a4d !important; }  vencord message logger deleted background */
-    .messagelogger-deleted { --text-normal: oklch(0.71 0.068 52.63); --red-460: oklch(1 0 0); } /* vencord message logger deleted text */
+    /*.messagelogger-deleted { background-color: var(--ec-red)4d !important; }  vencord message logger deleted background */
+    .messagelogger-deleted { --text-normal: var(--ec-red); --red-460: oklch(1 0 0); } /* vencord message logger deleted text */
 
     rect[fill='#82838b'], svg[fill='#82838b'] {
-        fill: #75748B;
+        fill: oklch(56.804% 0.03526 287.192);
     }
     .status_a423bd[style='background-color: rgb(130, 131, 139);'] {
-        background-color: #75748B !important;
+        background-color: oklch(56.804% 0.03526 287.192) !important;
     }
     rect[fill='#43a25a'], svg[fill='#43a25a'] {
-        fill: #90b27c;
+        fill: oklch(72.437% 0.08404 134.335);
     }
     .status_a423bd[style='background-color: rgb(67, 162, 90);'] {
-        background-color: #90b27c !important;
+        background-color: oklch(72.437% 0.08404 134.335) !important;
     }
     rect[fill='#ca9654'], svg[fill="#ca9654"] {
-        fill: #C3A260;
+        fill: oklch(72.759% 0.09315 83.593);
     }
     .status_a423bd[style='background-color: rgb(202, 150, 84);'] {
-        background-color: #C3A260 !important;
+        background-color: oklch(72.759% 0.09315 83.593) !important;
     }
     rect[fill='#d83a42'], svg[fill='#d83a42'] {
-        fill: #C4967A;
+        fill: oklch(70.948% 0.06793 52.597);
     }
     .status_a423bd[style='background-color: rgb(216, 58, 66);'] {
-        background-color: #C4967A !important;
+        background-color: oklch(70.948% 0.06793 52.597) !important;
     }
     rect[fill='#9147ff'], svg[fill='#9147ff'] {
-        fill: #8F669C;
+        fill: oklch(57.244% 0.09347 317.808);
     }
     .status_a423bd[style='background-color: rgb(145, 71, 255);'] {
-        background-color: #8F669C !important;
+        background-color: oklch(57.244% 0.09347 317.808) !important;
     }
     svg>path[fill='#43a25a'] {
-      fill: var(--candy-green);
+      fill: var(--ec-green);
     }
   }
