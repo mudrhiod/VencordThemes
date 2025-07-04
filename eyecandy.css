@@ -24,7 +24,7 @@
     --ec-button-hover: oklch(38.009% 0.01695 290.119);
     
     --ec-accent: oklch(72.785% 0.07856 77.143);
-    --ec-accenthover: oklch(66.032% 0.09643 76.273);
+    --ec-accent-hover: oklch(66.032% 0.09643 76.273);
     --ec-accent2: oklch(71.271% 0.08103 345.993);
     --ec-accent2-hover: oklch(62.56% 0.11033 347.554);
 
@@ -98,7 +98,7 @@
     --button-danger-background-hover: color-mix(in oklch, var(--ec-red), black 10%);
     --button-filled-brand-background: var(--ec-accent);
     --button-filled-brand-background-active: #906e3c !important;
-    --button-filled-brand-background-hover: var(--ec-accenthover);
+    --button-filled-brand-background-hover: var(--ec-accent-hover);
     --button-filled-brand-border: var(--ec-accent) !important;
     --button-filled-brand-inverted-background: var(--ec-accent2) ;
     --button-filled-brand-inverted-background-active: #a24e7b !important;
@@ -114,10 +114,10 @@
     --button-outline-danger-text: var(--ec-bg2) !important;
     --button-outline-danger-text-active: var(--ec-bg2) !important;
     --button-outline-danger-text-hover: var(--ec-bg2) !important;
-    --button-outline-primary-background-hover: var(--ec-accenthover);
+    --button-outline-primary-background-hover: var(--ec-accent-hover);
     --button-outline-primary-border: var(--ec-accent);
     --button-outline-primary-border-active: var(--ec-accent);
-    --button-outline-primary-border-hover: var(--ec-accenthover);
+    --button-outline-primary-border-hover: var(--ec-accent-hover);
     --button-outline-primary-text: var(--ec-text1);
     --button-outline-primary-text-active: var(--ec-bg2);
     --button-outline-primary-text-hover: var(--ec-bg2);
@@ -372,8 +372,12 @@
         background: var(--ec-accent2);
     }
 
+    .notice__6e2b9 .button__6e2b9:hover {
+        color: var(--ec-accent2) !important;
+    }
+
     .barButtonAlt__0f481:hover {
-        background-color: var(--ec-accenthover);
+        background-color: var(--ec-accent-hover);
     }
 
     .shinyButton__6a443:hover {
@@ -413,6 +417,18 @@
         -webkit-backdrop-filter: none;
         backdrop-filter: none;
         background-color: var(--ec-bgcard);
+    }
+
+    .button-danger-background {
+        background-color: color-mix(in oklch, var(--ec-red), 90% transparent) !important;
+        color: var(--ec-red) !important;
+        border: 1px solid color-mix(in oklch, var(--ec-red), 40% transparent)!important
+    }
+
+    .button-danger-background:hover {
+        background-color: color-mix(in oklch, var(--ec-red), 10% transparent) !important;
+        color: var(--ec-bg2) !important;
+        border: 1px solid color-mix(in oklch, var(--ec-red), 40% transparent)!important
     }
 
     /* switches background */
@@ -467,6 +483,11 @@
     .ownerIcon__5d473 { color: #C39461; }
     .premiumIcon__5d473 { color: #F258A1; }
     .numberBadge__2b1f5  { --status-danger: #DFBE80; }
+
+
+    [class*="updateIconForeground"] {
+      fill: var(--ec-green);
+    }
 
     .refreshIcon__001a7 { 
       fill: var(--ec-bg2); }
