@@ -1,0 +1,11 @@
+.contents_c19a55 .messageContent_c19a55, .container_b7e1cb {
+  background-color: var(--chat-bubble-bg);
+  display: inline-block;
+  max-width: 650px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0;
+  padding: 7px;
+  border-radius: 12px;
+}
