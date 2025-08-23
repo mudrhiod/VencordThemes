@@ -4,11 +4,11 @@
  * @authorId 807170846497570848
  * @description Vencord port of Hanibee's Eye Candy (Darker varient).
  * @version 1.0.1
- * @updateUrl https://mudaranrhiod.github.io/VencordThemes/darkeyecandy.css
- * @source https://github.com/mudaranrhiod/VencordThemes
+ * @updateUrl https://mudrhiod.github.io/VencordThemes/darkeyecandy.css
+ * @source https://github.com/mudrhiod/VencordThemes
  */
 
- @import url(https://mudaranrhiod.github.io/VencordThemes/eyecandy.css);
+ @import url(https://mudrhiod.github.io/VencordThemes/eyecandy.css);
  :root, .theme-dark {
 
     --bg-1: #3B3A45;

@@ -1,1 +1,1 @@
-### Vencor the
+### Vencor theme

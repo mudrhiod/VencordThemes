@@ -4,8 +4,8 @@
  * @authorId 807170846497570848
  * @description Vencord port of Hanibee's Eye Candy theme.
  * @version 1.0.1
- * @updateUrl https://mudaranrhiod.github.io/VencordThemes/eyecandy.css
- * @source https://github.com/mudaranrhiod/VencordThemes
+ * @updateUrl https://mudrhiod.github.io/VencordThemes/eyecandy.css
+ * @source https://github.com/mudrhiod/VencordThemes
  */
 
  @import url("https://nspc911.github.io/themes/vencord/RefreshedSeamlessChatBar.theme.css");
@@ -532,9 +532,9 @@
     .newlyAddedBadge_fc7141 { background: #D1B681 !important; }
     .newlyAddedHighlight_fc7141 { border: 1px solid var(--ec-blue) !important;  }
 
-    .permissionCheckmark__50a54 { background: url(https://mudaranrhiod.github.io/discord-iconpacks/vencord/72e4439bf318b5c5.svg) no-repeat; }
+    .permissionCheckmark__50a54 { background: url(https://mudrhiod.github.io/discord-iconpacks/vencord/72e4439bf318b5c5.svg) no-repeat; }
 
-    .lockIcon__2666b { content: url(https://mudaranrhiod.github.io/discord-iconpacks/vencord/513846bd926efc73.svg); }
+    .lockIcon__2666b { content: url(https://mudrhiod.github.io/discord-iconpacks/vencord/513846bd926efc73.svg); }
 
     /*.messagelogger-deleted { background-color: var(--ec-red)4d !important; }  vencord message logger deleted background */
     .messagelogger-deleted { --text-normal: var(--ec-red); --red-460: oklch(1 0 0); } /* vencord message logger deleted text */
