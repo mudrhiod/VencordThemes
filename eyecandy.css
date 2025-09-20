@@ -19,6 +19,7 @@
     --ec-bg3: oklch(40.149% 0.02346 291.828);
     --ec-bginput: oklch(43.946% 0.03201 318.121);
     --ec-bgcard: oklch(39.54% 0.02534 294.348);
+    --ec-border: oklch(52.204% 0.0282 290.452);
 
     --ec-button: oklch(46.963% 0.02088 289.062);
     --ec-button-hover: oklch(38.009% 0.01695 290.119);
@@ -63,7 +64,7 @@
     --background-mobile-secondary: var(--ec-bg1);
     --background-mod-faint: var(--ec-bgcard) !important;
     --background-modifier-active: var(--ec-button) !important;
-    --background-modifier-accent: #696779 !important;
+    --background-modifier-accent: var(--ec-border) !important;
     --background-modifier-hover: var(--ec-hover1) !important;
     --background-modifier-selected: var(--ec-button) !important;
     --background-mod-normal: var(--ec-button);
@@ -82,7 +83,7 @@
     --bg-base-tertiary: var(--ec-bg2) !important;
     --bg-brand: var(--ec-accent) !important;
     --bg-mod-faint: #51505e !important;
-    --bg-mod-strong: #696779 !important;
+    --bg-mod-strong: var(--ec-border) !important;
     --bg-mod-subtle: var(--ec-hover1) !important;
     --bg-overlay-floating: var(--ec-bg1);
     --bg-surface-overlay: var(--ec-bgcard) !important;
@@ -92,7 +93,7 @@
     --blurple-50: var(--ec-accent2);
     --border-normal: var(--ec-bg2);
     --border-subtle: var(--ec-bg2) !important;
-    --brand-10a: var(--ec-hover2) ;
+    --brand-10a: var(--ec-hover2);
     --brand-260: var(--ec-blue);
     --brand-360: var(--ec-accent) !important;
     --brand-500: var(--ec-accent) !important;
@@ -160,7 +161,7 @@
     --custom-status-bubble-background: var(--ec-bg2) !important;
     --custom-status-bubble-background-color: var(--ec-bg1) !important;
     --deprecated-text-input-bg: var(--ec-bginput) !important;
-    --deprecated-text-input-border: #696779 !important;
+    --deprecated-text-input-border: var(--ec-border) !important;
     --green-230: var(--ec-green);
     --green-300: var(--ec-green);
     --green-360: var(--ec-green);
@@ -211,7 +212,7 @@
     --opacity-blurple-16: #C3A16E33;
     --plum-23: var(--ec-bg2);
     --polls-victor-fill: #D1B68133;
-    --polls-voted-fill: #696779;
+    --polls-voted-fill: var(--ec-border);
     --premium-perk-blue: var(--ec-blue);
     --premium-perk-dark-blue: #957e50;
     --premium-perk-green: #D1B681;
@@ -422,16 +423,16 @@
 
     .timestamp__75297, .sectionDivider__629e4,
     .bar_a562c8, .chipletContainerInner__10651 { 
-        background: #696779 !important; 
+        background: var(--ec-border) !important; 
     }
 
     .lookFilled__201d5.colorPrimary__201d5 { 
-        border-color: #696779;
+        border-color: var(--ec-border);
     }
     
     .panels_c48ade { 
-        border: 1px solid #69677980;
-        background: #474453;
+        border: 1px solid var(--ec-border)80;
+        background: var(--ec-bgcard);
     }
  
     .barFill_a562c8, .grabber_a562c8, .akaBadge__488b1 {
@@ -474,13 +475,13 @@
 
     /* switches background */
     div[class^="container__6f89e"] > div[class^="container_"] {
-      background-color: #696779 !important;
+      background-color: var(--ec-border) !important;
     }
     div[class^="control_"] > div[class^="container_"][class*="checked_"] {
       background-color: #C2A775 !important;
     }
     div[class^="vc-addon-card"] > div div[class^="container_"] {
-      background-color: #696779;
+      background-color: var(--ec-border);
     }
     div[class^="vc-addon-card"] > div div[class^="container_"][class*="checked_"] {
       background-color: #C2A775;
@@ -513,13 +514,13 @@
     .input__0f084:not([readOnly]):focus, .container_a45028:focus-within, .topicsDropdownBase__0f481,
     .addFriendInputWrapper__72ba7:focus-within,
     .header_f369db
-    { border-color: #696779; }
+    { border-color: var(--ec-border); }
 
     .modeSelected__2ea32 .link__2ea32 { 
-      box-shadow: inset 0 0 0 1px #696779 !important; }
+      box-shadow: inset 0 0 0 1px var(--ec-border) !important; }
 
     .vc-gp-tab-bar, .vc-settings-tab-bar, .tabBar_d6f9e9, .tabBar_f8303a
-    { border-bottom: 2px solid #696779 !important; }
+    { border-bottom: 2px solid var(--ec-border) !important; }
 
     .freeTrialPillText_ac86f6.freeTrialPillTextInverted_ac86f6 { color: var(--premium-tier-2-purple-for-gradients); }
 
