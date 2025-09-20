@@ -17,8 +17,8 @@
     --ec-bg1: oklch(41.264% 0.0233 291.865);
     --ec-bg2: oklch(36.954% 0.02048 289.149);
     --ec-bg3: oklch(40.149% 0.02346 291.828);
-    --ec-bginput: oklch(43.946% 0.03201 318.121); /* input backgrounds */
-    --ec-bgcard: oklch(39.54% 0.02534 294.348); /* cards, popout menus, floating elements */
+    --ec-bginput: oklch(43.946% 0.03201 318.121);
+    --ec-bgcard: oklch(39.54% 0.02534 294.348);
 
     --ec-button: oklch(46.963% 0.02088 289.062);
     --ec-button-hover: oklch(38.009% 0.01695 290.119);
@@ -34,11 +34,11 @@
     --ec-blue: oklch(68.927% 0.06685 83.719);
 
     --ec-hover1: #cfc7d83e; /* main hover */
-    --ec-hover2: #10132033; /* hover */
+    --ec-hover2: #10132033;
 
     --ec-text1: oklch(93.157% 0.00278 285.781);
     --ec-text2: oklch(80.502% 0.01969 282.637);
-    --ec-text3: oklch(79.22% 0.05233 327.013); /* placeholder and muted text */
+    --ec-text3: oklch(79.22% 0.05233 327.013);
 
     --chat-bubble-bg: #454351 !important; /* chat bubble background obviously */
     
@@ -146,6 +146,15 @@
     --chat-text-muted: var(--ec-text3) !important;
     --checkbox-background-checked: #C5A361 !important;
     --checkbox-border-checked: #C2A775 !important;
+    --control-background-primary-active: color-mix(in oklch, var(--ec-accent), black 20%);
+    --control-background-primary-default: var(--ec-accent);
+    --control-background-primary-hover: var(--ec-accent-hover);
+    --control-border-primary-active: color-mix(in oklch, var(--ec-accent), black 20%);
+    --control-border-primary-default: var(--ec-accent);
+    --control-text-primary-active: var(--ec-bg2);
+    --control-text-primary-default: var(--ec-bg2);
+    --control-text-primary-hover: var(--ec-bg2);
+    --control-text-critical-secondary-default: var(--ec-red);
     --control-brand-foreground-new: #9F8657 !important;
     --custom-channel-members-bg: var(--ec-bg1);
     --custom-status-bubble-background: var(--ec-bg2) !important;
@@ -177,6 +186,7 @@
     --info-warning-foreground: #BDBAEB !important;
     --info-warning-text: var(--ec-text1) !important;
     --input-background: var(--ec-bginput) !important;
+    --input-border-active: var(--ec-accent2);
     --input-placeholder-text: var(--ec-text3) !important;
     --interactive-active: var(--ec-text1);
     --interactive-hover: var(--ec-text1);
@@ -293,24 +303,35 @@
     }
 
     .shinyButton__6a443  .button__5d39a, .shinyButton__6a443 .upsellButton__71816,
-    .pause_d70e0d { 
+    .pause_d70e0d, .pencilIconWrapper__46773 { 
         color: var(--ec-bg2);
     }
 
     .childWrapperNoHoverBg__6e9f8, .pendingFolderButtonIcon__93fc9 { 
         --background-surface-higher: var(--ec-bg2) !important;
     }
-    .selected_b3f026 { 
-        --interactive-active: var(--ec-bg2);
+    
+    .side_b3f026 .themed_b3f026.selected_b3f026.item_b3f026 { 
+        background: var(--background-modifier-selected) !important;
     }
+
     .tierCardListIcon_be48d0 { 
         --white: var(--ec-bg2);
     }
 
-    .themedBackground__74017, .searchBar__97492, .searchBar_c7e907, .searchBar__5ec2f,
+    .mentionsBar__7aaec {
+        --status-danger-text: var(--ec-bg2);
+    }
+
+    .themedBackground__74017, .searchBar__97492, .wrapper__3412a  , .searchBar__5ec2f,
     .searchBar__1ac1c,
-    .header_f369db { 
+    .header_f369db,
+    .joinOptions__959cb  { 
         background: var(--ec-bginput);
+    }
+
+    .bar__8e51c {
+        background-color: var(--ec-bginput);
     }
 
     .appDetailsContainer__50a54,
@@ -362,7 +383,11 @@
     }
 
     .side_b3f026 .themed_b3f026.item_b3f026:hover:not(.disabled_b3f026),
-    .interactive_bf202d:hover, .container_e97453:hover, .colorDefault_c1e9c4.focused_c1e9c4, button.button__67645.enabled__67645:hover { 
+    .interactive_bf202d:hover,
+    .navButton__08434:hover,
+    .container_e97453:hover, .colorDefault_c1e9c4.focused_c1e9c4, 
+    button.button__67645.enabled__67645:hover,
+    .emojiItem_fc7141.emojiItemSelected_fc7141 { 
         background: var(--ec-hover1); 
     }
 
@@ -375,7 +400,7 @@
     }
 
     .shinyButton__6a443,
-    .spineBorder__5b40b { 
+    .spineBorder__5b40b, .progress__8e51c { 
         background: var(--ec-accent2);
     }
 
@@ -406,13 +431,14 @@
     
     .panels_c48ade { 
         border: 1px solid #69677980;
+        background: #474453;
     }
  
     .barFill_a562c8, .grabber_a562c8, .akaBadge__488b1 {
         background: var(--control-brand-foreground-new);
     }
 
-    .mention__3b95d { 
+    .mention__3b95d, .mentionsBar__7aaec { 
         background-color: var(--checkbox-background-checked); 
     }
 
@@ -447,7 +473,7 @@
     }
 
     /* switches background */
-    div[class^="control_"] > div[class^="container_"] {
+    div[class^="container__6f89e"] > div[class^="container_"] {
       background-color: #696779 !important;
     }
     div[class^="control_"] > div[class^="container_"][class*="checked_"] {
@@ -538,6 +564,8 @@
 
     /*.messagelogger-deleted { background-color: var(--ec-red)4d !important; }  vencord message logger deleted background */
     .messagelogger-deleted { --text-normal: var(--ec-red); --red-460: oklch(1 0 0); } /* vencord message logger deleted text */
+
+    .vc-special-image { content: url(https://media.discordapp.net/stickers/1371999062122827928.webp?size=160&quality=lossless) !important };
 
     rect[fill='#82838b'], svg[fill='#82838b'] {
         fill: oklch(56.804% 0.03526 287.192);

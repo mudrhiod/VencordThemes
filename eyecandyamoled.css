@@ -1,0 +1,21 @@
+/**
+ * @name Eye Candy
+ * @author Mudrhiod
+ * @authorId 807170846497570848
+ * @description Vencord port of Hanibee's Eye Candy theme with my own take on amoled
+ * @version 1.0.1
+ * @updateUrl https://mudrhiod.github.io/VencordThemes/eyecandyamoled.css
+ * @source https://github.com/mudrhiod/VencordThemes
+ */
+
+ @import url(https://raw.githubusercontent.com/mudrhiod/VencordThemes/refs/heads/main/eyecandy.css);
+
+ :root, .theme-dark {
+
+    --ec-bg1: #18171c;
+    --ec-bg2: #0f0e11;
+    --ec-bg3: #111013;
+    --ec-bginput: #241f26;
+    --ec-bgcard: #1c1b21;
+
+  }
