@@ -35,7 +35,7 @@
     --ec-blue: oklch(68.927% 0.06685 83.719);
 
     --ec-hover1: #cfc7d83e; /* main hover */
-    --ec-hover2: #10132033;
+    --ec-hover2: #10132026;
 
     --ec-text1: oklch(93.157% 0.00278 285.781);
     --ec-text2: oklch(80.502% 0.01969 282.637);
@@ -59,7 +59,7 @@
     --background-message-automod-hover: rgba(244, 219, 214, 0.1);
     --background-message-highlight: #3f3e4abf !important;
     --background-message-highlight-hover: #3e4a42bf !important;
-    --background-message-hover: #10132026 !important;
+    --background-message-hover: var(--ec-hover2) !important;
     --background-mobile-primary: var(--ec-bg2);
     --background-mobile-secondary: var(--ec-bg1);
     --background-mod-faint: var(--ec-bgcard) !important;

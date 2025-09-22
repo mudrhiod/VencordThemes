@@ -22,8 +22,20 @@
     --ec-button: #3d3c45;
     --ec-button-hover: #42414b;
 
+    --ec-hover1: #cfc7d83e;
+    --ec-hover2: #cfc7d81a;
+
+    --app-background-frame: #111013 !important;
+
     .panels_c48ade { 
         border: 1px solid var(--ec-border);
         background: var(--ec-bgcard);
+    }
+    
+    .childWrapperNoHoverBg__6e9f8, .pendingFolderButtonIcon__93fc9 { 
+        --background-mod-subtle: var(--ec-bg1) !important;
+    }
+    .circleIconButton__5bc7e {
+        background-color: var(--ec-bg1);
     }
   }
