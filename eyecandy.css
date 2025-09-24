@@ -29,10 +29,12 @@
     --ec-accent2: oklch(71.271% 0.08103 345.993);
     --ec-accent2-hover: oklch(62.56% 0.11033 347.554);
 
-    --ec-red: oklch(70.712% 0.06975 52.907);
-    --ec-green: oklch(78.71% 0.07614 83.795);
-    --ec-yellow: oklch(77.649% 0.08304 83.296);
     --ec-blue: oklch(68.927% 0.06685 83.719);
+    --ec-green: oklch(78.71% 0.07614 83.795);
+    --ec-red: oklch(70.712% 0.06975 52.907);
+    --ec-pink: oklch(70.712% 0.06329 347.277);
+    --ec-purple: oklch(57.244% 0.09347 317.808);
+    --ec-yellow: oklch(77.649% 0.08304 83.296);
 
     --ec-hover1: #cfc7d83e; /* main hover */
     --ec-hover2: #10132026;
@@ -41,7 +43,7 @@
     --ec-text2: oklch(80.502% 0.01969 282.637);
     --ec-text3: oklch(79.22% 0.05233 327.013);
 
-    --chat-bubble-bg: #454351 !important; /* chat bubble background obviously */
+    --chat-bubble-bg: oklch(39.026% 0.02363 291.788) !important; /* chat bubble background obviously */
     
     --activity-card-background: var(--ec-bg2) !important;
     --app-background-frame: var(--ec-bg3) !important;
@@ -147,11 +149,23 @@
     --chat-text-muted: var(--ec-text3) !important;
     --checkbox-background-checked: #C5A361 !important;
     --checkbox-border-checked: #C2A775 !important;
+    --control-background-active-active: color-mix(in oklch, var(--ec-green), black 20%);
+    --control-background-active-default: var(--ec-green);
+    --control-background-active-hover: color-mix(in oklch, var(--ec-green), black 10%);
+    --control-background-critical-primary-active: color-mix(in oklch, var(--ec-red), black 20%);
+    --control-background-critical-primary-default: var(--ec-red);
+    --control-background-critical-primary-hover: color-mix(in oklch, var(--ec-red), black 10%);
     --control-background-primary-active: color-mix(in oklch, var(--ec-accent), black 20%);
     --control-background-primary-default: var(--ec-accent);
     --control-background-primary-hover: var(--ec-accent-hover);
     --control-border-primary-active: color-mix(in oklch, var(--ec-accent), black 20%);
     --control-border-primary-default: var(--ec-accent);
+    --control-text-active-active: var(--ec-bg2);
+    --control-text-active-default: var(--ec-bg2);
+    --control-text-active-hover: var(--ec-bg2);
+    --control-text-critical-primary-active: var(--ec-bg2);
+    --control-text-critical-primary-default: var(--ec-bg2);
+    --control-text-critical-primary-hover: var(--ec-bg2);
     --control-text-primary-active: var(--ec-bg2);
     --control-text-primary-default: var(--ec-bg2);
     --control-text-primary-hover: var(--ec-bg2);
@@ -445,6 +459,7 @@
 
     .joinOptionContent__959cb.active__959cb { 
         background-color: #B17B93; 
+        --interactive-active: var(--ec-bg2);
     }
 
     .vc-plugins-restart-button {
@@ -474,8 +489,11 @@
     }
 
     /* switches background */
-    div[class^="container__6f89e"] > div[class^="container_"] {
+    div[class^="container__6f89e"] {
       background-color: var(--ec-border) !important;
+    }
+    .container__6f89e.checked__6f89e {
+        background-color: #C2A775 !important;
     }
     div[class^="control_"] > div[class^="container_"][class*="checked_"] {
       background-color: #C2A775 !important;
@@ -488,76 +506,121 @@
     }
     /* switches checkmark */
     [class*="checked_"] > svg > svg > path { 
-      fill: #C2A775; }
+      fill: #C2A775; 
+    }
     /* switches white bit */
-    div[class^=control_]>div[class^=container_][class*=checked_]>svg>rect {
-      fill: var(--ec-bg2); }
-    div[class^=vc-addon-card]>div div[class^=container_][class*=checked_]>svg>rect { 
-      fill: var(--ec-bg2); }
+    div[class^=container_][class*=checked_] > svg > rect {
+      fill: var(--ec-bg2); 
+    }
+    div[class^=vc-addon-card] > div div[class^=container_][class*=checked_] > svg > rect { 
+      fill: var(--ec-bg2); 
+    }
     
-    .redGlow__67645
-    { background-color: #c4957866 !important; } 
+    .redGlow__67645 { 
+        background-color: #c4957866 !important; 
+    } 
 
     /* headers for connections */
     .guildSection_d5cd2d,
     .connectionHeader_c7f964,
     .headerV2__50a54,
-    .review_a9b452
-    { background: oklch(0.38 0.0243 294.39); }
+    .review_a9b452 { 
+        background: oklch(0.38 0.0243 294.39); 
+    }
 
-    .largeCountdownPill_e270ac
-    { background-color: hsla(245, 9%, 27%); }
+    .largeCountdownPill_e270ac { 
+        background-color: hsla(245, 9%, 27%); 
+    }
 
-    .unavailableCounterPill_a466a0
-    { border: 1px solid var(--ec-bg2); }
+    .unavailableCounterPill_a466a0 { 
+        border: 1px solid var(--ec-bg2); 
+    }
 
     .input__0f084:not([readOnly]):focus, .container_a45028:focus-within, .topicsDropdownBase__0f481,
     .addFriendInputWrapper__72ba7:focus-within,
-    .header_f369db
-    { border-color: var(--ec-border); }
+    .header_f369db { 
+        border-color: var(--ec-border); 
+    }
 
     .modeSelected__2ea32 .link__2ea32 { 
-      box-shadow: inset 0 0 0 1px var(--ec-border) !important; }
+      box-shadow: inset 0 0 0 1px var(--ec-border) !important; 
+    }
 
-    .vc-gp-tab-bar, .vc-settings-tab-bar, .tabBar_d6f9e9, .tabBar_f8303a
-    { border-bottom: 2px solid var(--ec-border) !important; }
+    .vc-gp-tab-bar, .vc-settings-tab-bar, .tabBar_d6f9e9, .tabBar_f8303a { 
+        border-bottom: 2px solid var(--ec-border) !important; 
+    }
 
     .freeTrialPillText_ac86f6.freeTrialPillTextInverted_ac86f6 { color: var(--premium-tier-2-purple-for-gradients); }
 
-    .ownerIcon__5d473 { color: #C39461; }
-    .premiumIcon__5d473 { color: #F258A1; }
-    .numberBadge__2b1f5  { --status-danger: #DFBE80; }
+    .ownerIcon__5d473 { 
+        color: #C39461; 
+    }
+    .premiumIcon__5d473 { 
+        color: #F258A1; 
+    }
+    .numberBadge__2b1f5  { 
+        --status-danger: #DFBE80; 
+    }
 
+    .textBadge__2b1f5 {
+        background-color: var(--ec-red) !important;
+    }
 
     [class*="updateIconForeground"] {
       fill: var(--ec-green);
     }
 
-    .refreshIcon__001a7 { 
-      fill: var(--ec-bg2); }
+    .refreshIcon__1bda4 { 
+      fill: var(--ec-bg2); 
+    }
 
     .nameAndDecorators__91a9d .botTagVerified__82f07 path[d^="M19.06"] { 
-      fill: var(--ec-bg2); }
+      fill: var(--ec-bg2); 
+    }
     
     .checkboxWrapper_f525d3, .checkbox_f525d3.checked_f525d3 path[d^="M19.06"] { 
-      fill: var(--ec-bg2); }
+      fill: var(--ec-bg2); 
+    }
+
+    [class^="checkbox_"]>svg>path {
+        fill: var(--ec-bg2);
+    }
     
     .checkboxWrapper_f525d3, .checkIcon__270d7 path[d^="M21.7"] { 
-      fill: var(--ec-bg2); }
+      fill: var(--ec-bg2); 
+    }
 
     .container__5b40b .spine__5b40b path[d^="M0 13H2c0"], path[d^="M6 18V16H9v2H6Zm3"] { 
-      fill: var(--ec-accent2); }
+      fill: var(--ec-accent2); 
+    }
   
     .icon_a14595 path[d^="M23 12a11 11 0 1 1-22 0 11 11 0 0 1 22 0ZM7.74 9.3A2 2 0 0 1 9.3 7.75l7.22-1.45a1 1 0 0 1 1.18 1.18l-1.45 7.22a2 2 0 0 1-1.57 1.57l-7.22 1.45a1 1 0 0 1-1.18-1.18L7.74 9.3Z"] {
-      fill: var(--ec-bg2); }
+      fill: var(--ec-bg2); 
+    }
     
     .botTagVerified__82f07 path[d="M19.06 6.94a1.5 1.5 0 0 1 0 2.12l-8 8a1.5 1.5 0 0 1-2.12 0l-4-4a1.5 1.5 0 0 1 2.12-2.12L10 13.88l6.94-6.94a1.5 1.5 0 0 1 2.12 0Z"] {
-      fill: var(--ec-bg2); }
+      fill: var(--ec-bg2); 
+    }
 
-    .topGuildEmojiBadge_aeaaeb { background: linear-gradient(268.26deg,var(--ec-red), #B2814D); }
-    .newlyAddedBadge_aeaaeb { background: linear-gradient(268.26deg, var(--ec-blue), #D1B681); }
-    .newlyAddedBadge_fc7141 { background: #D1B681 !important; }
-    .newlyAddedHighlight_fc7141 { border: 1px solid var(--ec-blue) !important;  }
+    .topGuildEmojiBadge_aeaaeb { 
+        background: linear-gradient(268.26deg,var(--ec-red), #B2814D); 
+    }
+
+    .newlyAddedBadge_aeaaeb { 
+        background: linear-gradient(268.26deg, var(--ec-blue), #D1B681); 
+    }
+
+    .progress__0d0f9 {
+        background: linear-gradient(270deg, var(--ec-pink) , var(--ec-purple));
+    }
+
+    .newlyAddedBadge_fc7141 { 
+        background: #D1B681 !important; 
+    }
+
+    .newlyAddedHighlight_fc7141 { 
+        border: 1px solid var(--ec-blue) !important;  
+    }
 
     .permissionCheckmark__50a54 { background: url(https://mudrhiod.github.io/discord-iconpacks/vencord/72e4439bf318b5c5.svg) no-repeat; }
 
@@ -567,6 +630,13 @@
     .messagelogger-deleted { --text-normal: var(--ec-red); --red-460: oklch(1 0 0); } /* vencord message logger deleted text */
 
     .vc-special-image { content: url(https://media.discordapp.net/stickers/1371999062122827928.webp?size=160&quality=lossless) !important };
+
+    stop[stop-color="#E292AA"] {
+        stop-color: var(--ec-purple) ;
+    }
+    stop[stop-color="#B473F5"] {
+        stop-color: var(--ec-pink) ;
+    }
 
     rect[fill='#82838b'], svg[fill='#82838b'] {
         fill: oklch(56.804% 0.03526 287.192);
