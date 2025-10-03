@@ -1,1 +1,1 @@
-### Vencor theme
+### Vencore themes :wires:
