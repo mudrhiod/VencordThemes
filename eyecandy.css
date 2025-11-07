@@ -278,6 +278,7 @@
     --text-link: #FFE1C1 !important;
     --text-link-low-saturation: var(--ec-accent);
     --text-positive: var(--ec-green) !important;
+    --text-tertiary: var(--channels-default);
     --user-profile-overlay-background: var(--ec-bg1) !important;
     --white: var(--ec-text1);
     --white-500: var(--ec-bg2);
