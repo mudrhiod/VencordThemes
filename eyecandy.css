@@ -396,6 +396,10 @@
         color: var(--ec-text1) !important;
     }
 
+    .root_bfe55a {
+        --white-500: var(--ec-text1);
+    }
+
     .caret_c1e9c4,
     .cozy_c19a55 .timestamp_c19a55 {
         color: var(--ec-text2);
