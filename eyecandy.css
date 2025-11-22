@@ -47,12 +47,14 @@
     
     --activity-card-background: var(--ec-bg2) !important;
     --app-background-frame: var(--ec-bg3) !important;
+    --app-border-frame: var(--ec-border);
     --background-accent: var(--ec-accent2) !important;
     --background-base-low: var(--ec-bg1) !important;
     --background-base-lower: var(--ec-bg1) !important;
     --background-base-lowest: var(--ec-bg2) !important;
     --background-code: var(--ec-bgcard) !important;
     --background-feedback-critical: #c4957866 !important;
+    --background-feedback-info: #BDBAEB20;
     --background-feedback-warning: #BDBAEB26;
     --background-floating: var(--ec-button) !important;
     --background-mentioned: #BDBAEB17 !important;
@@ -93,8 +95,8 @@
     --black-500: var(--ec-bg2);
     --blue-330: var(--ec-blue) !important;
     --blurple-50: var(--ec-accent2);
-    --border-normal: var(--ec-bg2);
-    --border-subtle: var(--ec-bg2) !important;
+    --border-normal: var(--app-border-frame);
+    --border-subtle: var(--app-border-frame) !important;
     --brand-10a: var(--ec-hover2);
     --brand-260: var(--ec-blue);
     --brand-360: var(--ec-accent) !important;
@@ -155,9 +157,13 @@
     --control-background-critical-primary-active: color-mix(in oklch, var(--ec-red), black 20%);
     --control-background-critical-primary-default: var(--ec-red);
     --control-background-critical-primary-hover: color-mix(in oklch, var(--ec-red), black 10%);
+    --control-background-critical-secondary-default: var(--ec-button);
+    --control-background-critical-secondary-hover: var(--ec-button-hover);
     --control-background-primary-active: color-mix(in oklch, var(--ec-accent), black 20%);
     --control-background-primary-default: var(--ec-accent);
     --control-background-primary-hover: var(--ec-accent-hover);
+    --control-background-secondary-default: var(--ec-button);
+    --control-background-secondary-hover: var(--ec-button-hover);
     --control-border-primary-active: color-mix(in oklch, var(--ec-accent), black 20%);
     --control-border-primary-default: var(--ec-accent);
     --control-text-active-active: var(--ec-bg2);
@@ -166,6 +172,7 @@
     --control-text-critical-primary-active: var(--ec-bg2);
     --control-text-critical-primary-default: var(--ec-bg2);
     --control-text-critical-primary-hover: var(--ec-bg2);
+    --control-text-critical-secondary-hover: var(--ec-red);
     --control-text-primary-active: var(--ec-bg2);
     --control-text-primary-default: var(--ec-bg2);
     --control-text-primary-hover: var(--ec-bg2);
@@ -192,7 +199,7 @@
     --icon-tertiary: var(--ec-text2) !important;
     --info-danger-text: var(--ec-text1);
     --info-help-background: var(--ec-yellow)26 !important;
-    --info-help-foreground: var(--ec-yellow);
+    --info-help-foreground: #BDBAEB;
     --info-help-text: var(--ec-text1);
     --info-positive-background: #D1B68126;
     --info-positive-foreground: #D1B681;
@@ -284,7 +291,7 @@
     --white-500: var(--ec-bg2);
     --yellow-300: #BDBAEB;
 
-    .messageContainer__95796, .messages__1ccd1, .messageGroupWrapper__45690,
+    .messageContainer__95796, .messages__1ccd1, .messageGroupWrapper_e8b59c,
     .container__6764b,
     .container_e97453,
     .background__1fed1, .fieldList__1fed1 {
@@ -304,7 +311,6 @@
 
     .folderIconContent__93fc9, .circleIconButton__5bc7e, .discoveryIcon_ef3116,
     .container_faa96b,
-    .folderIcon__48112,
     .channelRow_e4503a, 
     .topicsScroller__0f481 {
         background: var(--ec-bg2);
@@ -314,7 +320,7 @@
         background-color: var(--ec-bg2);
     }
 
-    .botTagVerified__82f07, .botText__82f07, .newBadge_d541c3, .textBadge__2b1f5, .tabBar__133bf .addFriend__133bf.addFriend__133bf.addFriend__133bf,
+    .botTagVerified__82f07, .botText__82f07, .newBadge__48064, .textBadge__2b1f5, .tabBar__133bf .addFriend__133bf.addFriend__133bf.addFriend__133bf,
     .numberBadge__2b1f5, .iconBadge__650eb,
     .wrapper__6e9f8.selected__6e9f8 .childWrapper__6e9f8,
     .heading__6fd0e, .guildName_f9f04c, .tierCardCurrentTier_be48d0, .tierCardHeading_be48d0, .tierCardListItem_be48d0, .tierCardBoostRequirement_be48d0, .unavailableCounterPillText_a466a0,
@@ -323,7 +329,7 @@
         color: var(--ec-bg2) !important;
     }
 
-    .shinyButton__6a443  .button__5d39a, .shinyButton__6a443 .upsellButton__71816,
+    .shinyButton__6a443  .button__5d39a, .shinyButton__6a443 .upsellButton_c91f9c,
     .pause_d70e0d, .pencilIconWrapper__46773 { 
         color: var(--ec-bg2);
     }
@@ -332,7 +338,7 @@
         --background-surface-higher: var(--ec-bg2) !important;
     }
     
-    .side_b3f026 .themed_b3f026.selected_b3f026.item_b3f026 { 
+    .side_aa8da2 .themed_aa8da2.selected_aa8da2.item_aa8da2 { 
         background: var(--background-modifier-selected) !important;
     }
 
@@ -344,7 +350,7 @@
         --status-danger-text: var(--ec-bg2);
     }
 
-    .themedBackground__74017, .searchBar__97492, .wrapper__3412a  , .searchBar__5ec2f,
+    .themedBackground__74017, .searchBar__97492, .wrapper__72c38  , .searchBar__5ec2f,
     .searchBar__1ac1c,
     .header_f369db,
     .joinOptions__959cb  { 
@@ -352,7 +358,8 @@
     }
 
     .bar__8e51c,
-    .wrapper__72c38 {
+    .wrapper__72c38,
+    .metadataContainer_c7f964 {
         background-color: var(--ec-bginput);
     }
 
@@ -380,13 +387,13 @@
     }
     
     :where(.buttonInner_fb7f94).icon_fb7f94, .button__5d39a,
-    .upsellButton__71816,
+    .upsellButton_c91f9c,
     .iconWrapper__6eb54,
     .wrapper__926d7,
     .circleIconButton__5bc7e,
     .durationTimeWrapper_cf09d8,
     .buttonContainer__3ce43 .lookFilled__201d5.colorBrand__201d5,
-    .message_fcf29c, .tooltipBlack__382e7 { 
+    .message__9a9f9, .tooltipBlack__382e7 { 
         color: var(--ec-text1);
     }
 
@@ -409,7 +416,7 @@
         color: var(--ec-text3);
     }
 
-    .side_b3f026 .themed_b3f026.item_b3f026:hover:not(.disabled_b3f026),
+    .side_aa8da2 .themed_aa8da2.item_aa8da2:hover:not(.disabled_aa8da2),
     .interactive_bf202d:hover,
     .navButton__08434:hover,
     .container_e97453:hover, .colorDefault_c1e9c4.focused_c1e9c4, 
@@ -457,7 +464,7 @@
         background: var(--ec-border) !important; 
     }
     
-    .panels_c48ade { 
+    .panels__5e434 { 
         border: 1px solid var(--ec-border)80;
         background: var(--ec-bgcard);
     }
@@ -501,11 +508,15 @@
         border: 1px solid color-mix(in oklch, var(--ec-red), 40% transparent)!important
     }
 
+    .folderPreviewWrapper__48112 {
+        background: #3A3743;
+    }
+
     /* switches background */
-    div[class^="container__6f89e"] {
+    div[class^="container__3f21e"] {
       background-color: var(--ec-border) !important;
     }
-    .container__6f89e.checked__6f89e {
+    .container__3f21e.checked__3f21e {
         background-color: #C2A775 !important;
     }
     div[class^="control_"] > div[class^="container_"][class*="checked_"] {
@@ -535,7 +546,7 @@
 
     /* headers for connections */
     .guildSection_d5cd2d,
-    .connectionHeader_c7f964,
+    /* .connectionHeader_c7f964, */
     .headerV2__50a54,
     .review_a9b452 { 
         background: oklch(0.38 0.0243 294.39); 
@@ -549,7 +560,7 @@
         border: 1px solid var(--ec-bg2); 
     }
 
-    .input__0f084:not([readOnly]):focus, .container_a45028:focus-within, .topicsDropdownBase__0f481,
+    .input__0ed4f:not([readOnly]):focus, .container_a45028:focus-within, .topicsDropdownBase__0f481,
     .addFriendInputWrapper__72ba7:focus-within,
     .header_f369db,
     .lookFilled__201d5.colorPrimary__201d5 { 
@@ -584,7 +595,7 @@
         background-color: var(--ec-red) !important;
     }
 
-    .wrapper_f61d60 {
+    .wrapper_cdf8a9 {
         background: #E492B94D;
         color: #E492B9;
     }
@@ -593,7 +604,7 @@
       fill: var(--ec-green);
     }
 
-    .refreshIcon__1bda4,
+    .refreshIcon__88a69,
     .refreshIcon__88a69 { 
       fill: var(--ec-bg2); 
     }

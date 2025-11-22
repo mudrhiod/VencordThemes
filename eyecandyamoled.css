@@ -17,7 +17,7 @@
     --ec-bg3: #111013;
     --ec-bginput: #241f26;
     --ec-bgcard: #1c1b21;
-    --ec-border: #1f1f25;
+    --ec-border: #3c3b45;
 
     --ec-button: #3d3c45;
     --ec-button-hover: #42414b;
@@ -37,5 +37,9 @@
     }
     .circleIconButton__5bc7e {
         background-color: var(--ec-bg1);
+    }
+
+    .folderPreviewWrapper__48112 {
+        background: #41404a;
     }
   }
