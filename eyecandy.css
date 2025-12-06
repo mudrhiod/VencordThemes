@@ -408,7 +408,8 @@
     }
 
     .caret_c1e9c4,
-    .cozy_c19a55 .timestamp_c19a55 {
+    .cozy_c19a55 .timestamp_c19a55,
+    .name__20a53 {
         color: var(--ec-text2);
     }
 
@@ -595,7 +596,7 @@
         background-color: var(--ec-red) !important;
     }
 
-    .wrapper_cdf8a9 {
+    .wrapper__4106a {
         background: #E492B94D;
         color: #E492B9;
     }
