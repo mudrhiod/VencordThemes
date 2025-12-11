@@ -46,7 +46,7 @@
     --chat-bubble-bg: oklch(39.026% 0.02363 291.788) !important; /* chat bubble background obviously */
     
     --activity-card-background: var(--ec-bg2) !important;
-    --app-background-frame: var(--ec-bg3) !important;
+    --app-frame-background: var(--ec-bg3) !important;
     --app-border-frame: var(--ec-border);
     --background-accent: var(--ec-accent2) !important;
     --background-base-low: var(--ec-bg1) !important;
@@ -166,6 +166,16 @@
     --control-background-secondary-hover: var(--ec-button-hover);
     --control-border-primary-active: color-mix(in oklch, var(--ec-accent), black 20%);
     --control-border-primary-default: var(--ec-accent);
+    --control-critical-secondary-text-default: var(--ec-red);
+    --control-primary-background-active: color-mix(in oklch, var(--ec-accent), black 20%);
+    --control-primary-background-default: var(--ec-accent);
+    --control-primary-background-hover: color-mix(in oklch, var(--ec-accent), black 10%);
+    --control-primary-border-active: color-mix(in oklch, var(--ec-accent), black 20%);
+    --control-primary-border-default: var(--ec-accent);
+    --control-primary-border-hover: var(--ec-accent);
+    --control-primary-text-active: var(--ec-bg2);
+    --control-primary-text-default: var(--ec-bg2);
+    --control-primary-text-hover: var(--ec-bg2);
     --control-text-active-active: var(--ec-bg2);
     --control-text-active-default: var(--ec-bg2);
     --control-text-active-hover: var(--ec-bg2);
@@ -196,8 +206,10 @@
     --icon-muted: var(--ec-text2);
     --icon-primary: var(--ec-text1);
     --icon-secondary: var(--ec-text1) !important;
+    --icon-subtle: var(--ec-text1);
     --icon-tertiary: var(--ec-text2) !important;
     --info-danger-text: var(--ec-text1);
+    --icon-feedback-warning: #BDBAEB;
     --info-help-background: var(--ec-yellow)26 !important;
     --info-help-foreground: #BDBAEB;
     --info-help-text: var(--ec-text1);
@@ -210,13 +222,16 @@
     --input-background: var(--ec-bginput) !important;
     --input-border-active: var(--ec-accent2);
     --input-placeholder-text: var(--ec-text3) !important;
+    --input-placeholder-text-default: var(--ec-text3);
     --interactive-active: var(--ec-text1);
     --interactive-hover: var(--ec-text1);
     --interactive-muted: var(--ec-text3);
     --interactive-normal: var(--ec-text1) !important;
+    --interactive-text-default: var(--ec-text1);
     --logo-primary: var(--ec-text1);
     --mention-background: #DFBE804D !important;
     --mention-foreground: #DFBE80 !important;
+    --message-mentioned-background-default: #BDBAEB17;
     --message-reacted-background: #C88EAD33 !important;
     --message-reacted-text: var(--ec-text1) !important;
     --modal-background: var(--ec-bg2) !important;
@@ -403,14 +418,17 @@
         color: var(--ec-text1) !important;
     }
 
-    .root_bfe55a {
+    .root_bfe55a,
+    .colorable_f1ceac.primaryDark_f1ceac {
         --white-500: var(--ec-text1);
     }
 
     .caret_c1e9c4,
     .cozy_c19a55 .timestamp_c19a55,
-    .name__20a53 {
-        color: var(--ec-text2);
+    .name__20a53,
+    .subText__20a53,
+    .item_caf372, .defaultColor__5345c {
+        color: var(--ec-text2) !important;
     }
 
     .searchIcon_d9be46 { 
@@ -596,7 +614,7 @@
         background-color: var(--ec-red) !important;
     }
 
-    .wrapper__4106a {
+    .wrapper__0d1ef {
         background: #E492B94D;
         color: #E492B9;
     }
